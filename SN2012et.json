@@ -1,57 +1,104 @@
 {
-    "SN2012et": {
-        "name": "SN2012et",
-        "aliases": [
-            "SN2012et",
-            "PSN J23423882+2705315"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003227.txt'>CBET 3227</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "21",
-        "discoverer": "Doug Rich",
-        "discovermonth": "9",
-        "discoveryear": "2012",
-        "galdec": "+270531",
-        "galra": "234238",
-        "host": "MCG +4-55-47",
-        "hvel": "7424",
-        "lumdist": "113.11",
-        "maxabsmag": "-18.768",
-        "maxappmag": "16.5",
-        "maxday": "21",
-        "maxmonth": "9",
-        "maxyear": "2012",
-        "redshift": "0.02508",
-        "sndec": "+27:05:31.5",
-        "snra": "23:42:38.82",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56191.5",
-                "band": "",
-                "abmag": "16.5",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012et":{
+		"name":"SN2012et",
+		"aliases":[
+			"SN2012et",
+			"PSN J23423882+2705315"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3227",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003227.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"21",
+		"discoverer":"Doug Rich",
+		"discovermonth":"9",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+27:05:31",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"23:42:38",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"M+04-55-47",
+				"source":"1"
+			},
+			{
+				"value":"MCG +4-55-47",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"7424",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"110",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"16.5",
+		"maxday":"21",
+		"maxmonth":"9",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.025",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+27:05:31.5",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"23:42:38.82",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56191.5",
+				"band":"",
+				"abmag":"16.5",
+				"source":"2,3"
+			}
+		]
+	}
 }

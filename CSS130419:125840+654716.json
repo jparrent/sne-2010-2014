@@ -1,48 +1,75 @@
 {
-    "CSS130419:125840+654716": {
-        "name": "CSS130419:125840+654716",
-        "aliases": [
-            "CSS130419:125840+654716"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://nesssi.cacr.caltech.edu/catalina/AllSN.html'>CRTS supernova</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "CRTS",
-        "discovermonth": "4",
-        "discoveryear": "2013",
-        "hvel": "23000",
-        "lumdist": "380",
-        "maxabsmag": "-20",
-        "maxappmag": "18",
-        "maxday": "20",
-        "maxmonth": "4",
-        "maxyear": "2013",
-        "redshift": "0.08",
-        "sndec": "+65:47:16.2",
-        "snra": "12:58:40.09",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56402.5",
-                "band": "",
-                "abmag": "18.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"CSS130419:125840+654716":{
+		"name":"CSS130419:125840+654716",
+		"aliases":[
+			"CSS130419:125840+654716"
+		],
+		"sources":[
+			{
+				"name":"CRTS supernova",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"CRTS",
+		"discovermonth":"4",
+		"discoveryear":"2013",
+		"hvel":[
+			{
+				"value":"20000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"400",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"18",
+		"maxday":"20",
+		"maxmonth":"4",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.08",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+65:47:16.2",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"12:58:40.09",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56402.5",
+				"band":"",
+				"abmag":"18.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

@@ -1,51 +1,68 @@
 {
-    "PSN J09274465+1217224": {
-        "name": "PSN J09274465+1217224",
-        "aliases": [
-            "PSN J09274465+1217224",
-            "SNhunt244"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J09274465+1217224.html'>CBAT TOCP</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            }
-        ],
-        "discoverday": "28",
-        "discoverer": "CRTS",
-        "discovermonth": "4",
-        "discoveryear": "2014",
-        "host": "UGC 5044",
-        "maxappmag": "19.5",
-        "maxday": "28",
-        "maxmonth": "4",
-        "maxyear": "2014",
-        "sndec": "+12:17:22.4",
-        "snra": "09:27:44.65",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56775.5",
-                "band": "",
-                "abmag": "19.5",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56777.187",
-                "band": "C",
-                "abmag": "20.1",
-                "source": "3,1"
-            }
-        ]
-    }
+	"PSN J09274465+1217224":{
+		"name":"PSN J09274465+1217224",
+		"aliases":[
+			"PSN J09274465+1217224",
+			"SNhunt244"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J09274465+1217224.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			}
+		],
+		"discoverday":"28",
+		"discoverer":"CRTS",
+		"discovermonth":"4",
+		"discoveryear":"2014",
+		"host":[
+			{
+				"value":"UGC 5044",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":"19.5",
+		"maxday":"28",
+		"maxmonth":"4",
+		"maxyear":"2014",
+		"sndec":[
+			{
+				"value":"+12:17:22.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:27:44.65",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56775.5",
+				"band":"",
+				"abmag":"19.5",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56777.187",
+				"band":"C",
+				"abmag":"20.1",
+				"source":"3,2"
+			}
+		]
+	}
 }

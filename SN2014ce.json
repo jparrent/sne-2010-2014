@@ -1,79 +1,122 @@
 {
-    "SN2014ce": {
-        "name": "SN2014ce",
-        "aliases": [
-            "SN2014ce",
-            "PSN J23274086+2335214"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003942.txt'>CBET 3942</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Zhijian Xu & Xing Gao",
-                "alias": "4"
-            },
-            {
-                "name": "Enrique Díez",
-                "alias": "5"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "27",
-        "discoverer": "LOSS",
-        "discovermonth": "8",
-        "discoveryear": "2014",
-        "galdec": "+233520",
-        "galra": "232741",
-        "host": "NGC 7673",
-        "hvel": "3379",
-        "lumdist": "50.622",
-        "maxabsmag": "-18.822",
-        "maxappmag": "14.7",
-        "maxday": "27",
-        "maxmonth": "8",
-        "maxyear": "2014",
-        "redshift": "0.01134",
-        "sndec": "+23:35:21.4",
-        "snra": "23:27:40.86",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56896.5",
-                "band": "",
-                "abmag": "14.7",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56897.0",
-                "band": "U",
-                "abmag": "14.7",
-                "source": "4,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56902.56011",
-                "band": "U",
-                "abmag": "14.85",
-                "source": "5,2"
-            }
-        ]
-    }
+	"SN2014ce":{
+		"name":"SN2014ce",
+		"aliases":[
+			"SN2014ce",
+			"PSN J23274086+2335214"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3942",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003942.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Zhijian Xu & Xing Gao",
+				"alias":"4"
+			},
+			{
+				"name":"Enrique Díez",
+				"alias":"5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"27",
+		"discoverer":"LOSS",
+		"discovermonth":"8",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+23:35:20",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"23:27:41",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"NGC 7673",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"3379",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"49",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"14.7",
+		"maxday":"27",
+		"maxmonth":"8",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.011",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+23:35:21.4",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"23:27:40.86",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56896.5",
+				"band":"",
+				"abmag":"14.7",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56897.0",
+				"band":"U",
+				"abmag":"14.7",
+				"source":"4,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56902.56011",
+				"band":"U",
+				"abmag":"14.85",
+				"source":"5,3"
+			}
+		]
+	}
 }

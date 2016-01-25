@@ -1,67 +1,110 @@
 {
-    "SN2014S": {
-        "name": "SN2014S",
-        "aliases": [
-            "SN2014S"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003814.txt'>CBET 3814</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Joel Nicolas",
-                "alias": "4"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "4",
-        "discoverer": "Kiso Supernova Survey (KISS) collaboration",
-        "discovermonth": "3",
-        "discoveryear": "2014",
-        "galdec": "+535753",
-        "galra": "104026",
-        "host": "A104026+5357",
-        "hvel": "12000",
-        "lumdist": "187",
-        "maxabsmag": "-17.8",
-        "maxappmag": "18.6",
-        "maxday": "4",
-        "maxmonth": "3",
-        "maxyear": "2014",
-        "redshift": "0.041",
-        "sndec": "+53:57:58.6",
-        "snra": "10:40:24.98",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56720.5",
-                "band": "",
-                "abmag": "18.6",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56721.004",
-                "band": "CR",
-                "abmag": "18.6",
-                "source": "4,2"
-            }
-        ]
-    }
+	"SN2014S":{
+		"name":"SN2014S",
+		"aliases":[
+			"SN2014S"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3814",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003814.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Joel Nicolas",
+				"alias":"4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"4",
+		"discoverer":"Kiso Supernova Survey (KISS) collaboration",
+		"discovermonth":"3",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+53:57:53",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"10:40:26",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A104026+5357",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"12000",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"200",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"18.6",
+		"maxday":"4",
+		"maxmonth":"3",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.04",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+53:57:58.6",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:40:24.98",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56720.5",
+				"band":"",
+				"abmag":"18.6",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56721.004",
+				"band":"CR",
+				"abmag":"18.6",
+				"source":"4,3"
+			}
+		]
+	}
 }

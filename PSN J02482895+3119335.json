@@ -1,38 +1,50 @@
 {
-    "PSN J02482895+3119335": {
-        "name": "PSN J02482895+3119335",
-        "aliases": [
-            "PSN J02482895+3119335"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J02482895+3119335.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "26",
-        "discoverer": "T. Kryachko et al.",
-        "discovermonth": "10",
-        "discoveryear": "2011",
-        "maxappmag": "19.5",
-        "maxday": "26",
-        "maxmonth": "10",
-        "maxyear": "2011",
-        "sndec": "+31:19:33.5",
-        "snra": "02:48:28.95",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55860.5",
-                "band": "",
-                "abmag": "19.5",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J02482895+3119335":{
+		"name":"PSN J02482895+3119335",
+		"aliases":[
+			"PSN J02482895+3119335"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J02482895+3119335.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"26",
+		"discoverer":"T. Kryachko et al.",
+		"discovermonth":"10",
+		"discoveryear":"2011",
+		"maxappmag":"19.5",
+		"maxday":"26",
+		"maxmonth":"10",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+31:19:33.5",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"02:48:28.95",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55860.5",
+				"band":"",
+				"abmag":"19.5",
+				"source":"1,2"
+			}
+		]
+	}
 }

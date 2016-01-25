@@ -1,57 +1,104 @@
 {
-    "SN2012ek": {
-        "name": "SN2012ek",
-        "aliases": [
-            "SN2012ek",
-            "PSN J18402884+3607174"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003212.txt'>CBET 3212</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ib",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "17",
-        "discoverer": "Xing Gao et al.",
-        "discovermonth": "8",
-        "discoveryear": "2012",
-        "galdec": "+360730",
-        "galra": "184030",
-        "host": "UGC 11322",
-        "hvel": "8563",
-        "lumdist": "131.08",
-        "maxabsmag": "-17.688",
-        "maxappmag": "17.9",
-        "maxday": "17",
-        "maxmonth": "8",
-        "maxyear": "2012",
-        "redshift": "0.02898",
-        "sndec": "+36:07:17.4",
-        "snra": "18:40:28.84",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56156.5",
-                "band": "",
-                "abmag": "17.9",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012ek":{
+		"name":"SN2012ek",
+		"aliases":[
+			"SN2012ek",
+			"PSN J18402884+3607174"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3212",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003212.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ib",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"17",
+		"discoverer":"Xing Gao et al.",
+		"discovermonth":"8",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+36:07:30",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"18:40:30",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"M+06-41-13",
+				"source":"1"
+			},
+			{
+				"value":"UGC 11322",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"8563",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"129.15",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-17.656",
+		"maxappmag":"17.9",
+		"maxday":"17",
+		"maxmonth":"8",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.028563",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+36:07:17.4",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"18:40:28.84",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56156.5",
+				"band":"",
+				"abmag":"17.9",
+				"source":"2,3"
+			}
+		]
+	}
 }

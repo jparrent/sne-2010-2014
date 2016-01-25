@@ -1,68 +1,111 @@
 {
-    "SN2013hg": {
-        "name": "SN2013hg",
-        "aliases": [
-            "SN2013hg",
-            "CSS140101:120956+295353"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003700/CBET003753.txt'>CBET 3753</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Thomas Langhans",
-                "alias": "4"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "31",
-        "discoverer": "Koichi Itagaki",
-        "discovermonth": "12",
-        "discoveryear": "2013",
-        "galdec": "+295351",
-        "galra": "120955",
-        "host": "A120955+2953",
-        "hvel": "609",
-        "lumdist": "8.998",
-        "maxabsmag": "-14.571",
-        "maxappmag": "15.2",
-        "maxday": "31",
-        "maxmonth": "12",
-        "maxyear": "2013",
-        "redshift": "0.00203",
-        "sndec": "+29:53:51.3",
-        "snra": "12:09:55.69",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56657.5",
-                "band": "",
-                "abmag": "15.2",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56705.358",
-                "band": "UV",
-                "abmag": "17.6",
-                "source": "4,2"
-            }
-        ]
-    }
+	"SN2013hg":{
+		"name":"SN2013hg",
+		"aliases":[
+			"SN2013hg",
+			"CSS140101:120956+295353"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3753",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003700/CBET003753.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Thomas Langhans",
+				"alias":"4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"31",
+		"discoverer":"Koichi Itagaki",
+		"discovermonth":"12",
+		"discoveryear":"2013",
+		"galdec":[
+			{
+				"value":"+29:53:51",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"12:09:55",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A120955+2953",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"609",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"9.002",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-14.57",
+		"maxappmag":"15.2",
+		"maxday":"31",
+		"maxmonth":"12",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.002031",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+29:53:51.3",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"12:09:55.69",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56657.5",
+				"band":"",
+				"abmag":"15.2",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56705.358",
+				"band":"UV",
+				"abmag":"17.6",
+				"source":"4,3"
+			}
+		]
+	}
 }

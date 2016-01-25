@@ -1,94 +1,126 @@
 {
-    "PSN J17214592+6949141": {
-        "name": "PSN J17214592+6949141",
-        "aliases": [
-            "PSN J17214592+6949141",
-            "iPTF14awe"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6130'>ATEL 6130</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            },
-            {
-                "name": "Massimiliano Martignoni ",
-                "alias": "4"
-            },
-            {
-                "name": "Esteban Aguilar",
-                "alias": "5"
-            },
-            {
-                "name": "Thomas Langhans",
-                "alias": "6"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "7",
-        "discoverer": "MASTER",
-        "discovermonth": "5",
-        "discoveryear": "2014",
-        "host": "PGC 2732472",
-        "hvel": "12000",
-        "lumdist": "187",
-        "maxabsmag": "-19.1",
-        "maxappmag": "17.3",
-        "maxday": "7",
-        "maxmonth": "5",
-        "maxyear": "2014",
-        "redshift": "0.041",
-        "sndec": "+69:49:14.1",
-        "snra": "17:21:45.92",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56784.5",
-                "band": "",
-                "abmag": "17.3",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56787.36",
-                "band": "C",
-                "abmag": "17.6",
-                "source": "3,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56800.922",
-                "band": "V",
-                "abmag": "17.5",
-                "source": "4,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56802.88",
-                "band": "CR",
-                "abmag": "17.6",
-                "source": "5,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56803.383",
-                "band": "UV",
-                "abmag": "18.2",
-                "source": "6,1"
-            }
-        ]
-    }
+	"PSN J17214592+6949141":{
+		"name":"PSN J17214592+6949141",
+		"aliases":[
+			"PSN J17214592+6949141",
+			"iPTF14awe"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6130",
+				"url":"http://www.astronomerstelegram.org/?read=6130",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			},
+			{
+				"name":"Massimiliano Martignoni",
+				"alias":"4"
+			},
+			{
+				"name":"Esteban Aguilar",
+				"alias":"5"
+			},
+			{
+				"name":"Thomas Langhans",
+				"alias":"6"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"7",
+		"discoverer":"MASTER",
+		"discovermonth":"5",
+		"discoveryear":"2014",
+		"host":[
+			{
+				"value":"PGC 2732472",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"12000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"190",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"17.3",
+		"maxday":"7",
+		"maxmonth":"5",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.041",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+69:49:14.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"17:21:45.92",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56784.5",
+				"band":"",
+				"abmag":"17.3",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56787.36",
+				"band":"C",
+				"abmag":"17.6",
+				"source":"3,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56800.922",
+				"band":"V",
+				"abmag":"17.5",
+				"source":"4,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56802.88",
+				"band":"CR",
+				"abmag":"17.6",
+				"source":"5,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56803.383",
+				"band":"UV",
+				"abmag":"18.2",
+				"source":"6,2"
+			}
+		]
+	}
 }

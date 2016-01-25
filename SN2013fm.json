@@ -1,79 +1,126 @@
 {
-    "SN2013fm": {
-        "name": "SN2013fm",
-        "aliases": [
-            "SN2013fm",
-            "PSN J07310540+5756108"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003661.txt'>CBET 3661</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "4"
-            },
-            {
-                "name": "Thomas Langhans",
-                "alias": "5"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "5",
-        "discoverer": "MASTER",
-        "discovermonth": "9",
-        "discoveryear": "2013",
-        "galdec": "+575622",
-        "galra": "073106",
-        "host": "MCG +10-11-68",
-        "hvel": "12730",
-        "lumdist": "198.343",
-        "maxabsmag": "-19.7871",
-        "maxappmag": "16.7",
-        "maxday": "5",
-        "maxmonth": "9",
-        "maxyear": "2013",
-        "redshift": "0.04339",
-        "sndec": "+57:56:10.8",
-        "snra": "07:31:05.40",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56540.5",
-                "band": "",
-                "abmag": "16.7",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56543.477",
-                "band": "L",
-                "abmag": "18.0",
-                "source": "4,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56569.506",
-                "band": "UV",
-                "abmag": "19.5",
-                "source": "5,2"
-            }
-        ]
-    }
+	"SN2013fm":{
+		"name":"SN2013fm",
+		"aliases":[
+			"SN2013fm",
+			"PSN J07310540+5756108"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3661",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003661.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"4"
+			},
+			{
+				"name":"Thomas Langhans",
+				"alias":"5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"5",
+		"discoverer":"MASTER",
+		"discovermonth":"9",
+		"discoveryear":"2013",
+		"galdec":[
+			{
+				"value":"+57:56:22",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"07:31:06",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"M+10-11-68",
+				"source":"1"
+			},
+			{
+				"value":"MCG +10-11-68",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"12727",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"193.9",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.74",
+		"maxappmag":"16.7",
+		"maxday":"5",
+		"maxmonth":"9",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.04245",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+57:56:10.8",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"07:31:05.40",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56540.5",
+				"band":"",
+				"abmag":"16.7",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56543.477",
+				"band":"L",
+				"abmag":"18.0",
+				"source":"4,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56569.506",
+				"band":"UV",
+				"abmag":"19.5",
+				"source":"5,3"
+			}
+		]
+	}
 }

@@ -1,42 +1,143 @@
 {
-    "OGLE-2014-SN-023": {
-        "name": "OGLE-2014-SN-023",
-        "aliases": [
-            "OGLE-2014-SN-023"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5975'>ATEL 5975</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "OGLE-IV wide field survey",
-        "discovermonth": "2",
-        "discoveryear": "2014",
-        "hvel": "73000",
-        "lumdist": "1500",
-        "maxabsmag": "-22",
-        "maxappmag": "19.2",
-        "maxday": "24",
-        "maxmonth": "2",
-        "maxyear": "2014",
-        "redshift": "0.28",
-        "sndec": "-69:52:22.0",
-        "snra": "08:26:16.29",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56712.5",
-                "band": "",
-                "abmag": "19.2",
-                "source": "2,1"
-            }
-        ]
-    }
+	"OGLE-2014-SN-023":{
+		"name":"OGLE-2014-SN-023",
+		"aliases":[
+			"OGLE-2014-SN-023"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5975",
+				"url":"http://www.astronomerstelegram.org/?read=5975",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"OGLE-IV Transient Detection System",
+				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel#5445",
+				"url":"http://www.astronomerstelegram.org/?read=5445",
+				"alias":"4"
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"OGLE-IV wide field survey",
+		"discovermonth":"2",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"73000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"1500",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-22",
+		"maxappmag":"19.2",
+		"maxday":"24",
+		"maxmonth":"2",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.28",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-69:52:22.0",
+				"source":"1,2"
+			},
+			{
+				"value":"-69:52:21.5",
+				"source":"3,4"
+			}
+		],
+		"snra":[
+			{
+				"value":"08:26:16.29",
+				"source":"1,2"
+			},
+			{
+				"value":"8:26:16.27",
+				"source":"3,4"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56712.5",
+				"band":"",
+				"abmag":"19.2",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56888.42773",
+				"band":"I",
+				"abmag":"21.097",
+				"aberr":"0.322",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56922.35424",
+				"band":"I",
+				"abmag":"20.780",
+				"aberr":"0.192",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56928.32271",
+				"band":"I",
+				"abmag":"19.232",
+				"aberr":"0.038",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56929.40307",
+				"band":"I",
+				"abmag":"19.060",
+				"aberr":"0.076",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56932.34254",
+				"band":"I",
+				"abmag":"18.893",
+				"aberr":"0.029",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56938.36406",
+				"band":"I",
+				"abmag":"18.622",
+				"aberr":"0.032",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56943.35155",
+				"band":"I",
+				"abmag":"18.698",
+				"aberr":"0.022",
+				"source":"3,4"
+			}
+		]
+	}
 }

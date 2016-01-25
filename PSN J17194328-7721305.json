@@ -1,49 +1,81 @@
 {
-    "PSN J17194328-7721305": {
-        "name": "PSN J17194328-7721305",
-        "aliases": [
-            "PSN J17194328-7721305"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J17194328-7721305.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "Peter Aldous",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "host": "ESO 44-G10",
-        "hvel": "2690",
-        "lumdist": "40.1",
-        "maxabsmag": "-18.6",
-        "maxappmag": "14.4",
-        "maxday": "24",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "redshift": "0.009",
-        "sndec": "-77:21:30.5",
-        "snra": "17:19:43.28",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56528.5",
-                "band": "",
-                "abmag": "14.4",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J17194328-7721305":{
+		"name":"PSN J17194328-7721305",
+		"aliases":[
+			"PSN J17194328-7721305"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J17194328-7721305.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"Peter Aldous",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"host":[
+			{
+				"value":"ESO 44-G10",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"3000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"40",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"14.4",
+		"maxday":"24",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.009",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-77:21:30.5",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"17:19:43.28",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56528.5",
+				"band":"",
+				"abmag":"14.4",
+				"source":"1,2"
+			}
+		]
+	}
 }

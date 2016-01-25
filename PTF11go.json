@@ -1,44 +1,56 @@
 {
-    "PTF11go": {
-        "name": "PTF11go",
-        "aliases": [
-            "PTF11go"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3189'>ATEL 3189</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1"
-            }
-        ],
-        "discoverday": "11",
-        "discoverer": "PTF",
-        "discovermonth": "1",
-        "discoveryear": "2011",
-        "maxappmag": "19.2",
-        "maxday": "11",
-        "maxmonth": "1",
-        "maxyear": "2011",
-        "sndec": "+53:42:38.1",
-        "snra": "11:32:00.24",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55572.5",
-                "band": "",
-                "abmag": "19.2",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PTF11go":{
+		"name":"PTF11go",
+		"aliases":[
+			"PTF11go"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3189",
+				"url":"http://www.astronomerstelegram.org/?read=3189",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"11",
+		"discoverer":"PTF",
+		"discovermonth":"1",
+		"discoveryear":"2011",
+		"maxappmag":"19.2",
+		"maxday":"11",
+		"maxmonth":"1",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+53:42:38.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:32:00.24",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55572.5",
+				"band":"",
+				"abmag":"19.2",
+				"source":"1,2"
+			}
+		]
+	}
 }

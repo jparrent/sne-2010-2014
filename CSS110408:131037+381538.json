@@ -1,39 +1,51 @@
 {
-    "CSS110408:131037+381538": {
-        "name": "CSS110408:131037+381538",
-        "aliases": [
-            "CSS110408:131037+381538",
-            "CSS110427:131037+381538"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3324'>ATEL 3324</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "7",
-        "discoverer": "CRTS",
-        "discovermonth": "4",
-        "discoveryear": "2011",
-        "maxappmag": "19.2",
-        "maxday": "7",
-        "maxmonth": "4",
-        "maxyear": "2011",
-        "sndec": "+38:15:38.1",
-        "snra": "13:10:37.39",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55658.5",
-                "band": "",
-                "abmag": "19.2",
-                "source": "2,1"
-            }
-        ]
-    }
+	"CSS110408:131037+381538":{
+		"name":"CSS110408:131037+381538",
+		"aliases":[
+			"CSS110408:131037+381538",
+			"CSS110427:131037+381538"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3324",
+				"url":"http://www.astronomerstelegram.org/?read=3324",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"7",
+		"discoverer":"CRTS",
+		"discovermonth":"4",
+		"discoveryear":"2011",
+		"maxappmag":"19.2",
+		"maxday":"7",
+		"maxmonth":"4",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+38:15:38.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"13:10:37.39",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55658.5",
+				"band":"",
+				"abmag":"19.2",
+				"source":"1,2"
+			}
+		]
+	}
 }

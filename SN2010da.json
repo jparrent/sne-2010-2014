@@ -1,60 +1,99 @@
 {
-    "SN2010da": {
-        "name": "SN2010da",
-        "aliases": [
-            "SN2010da"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002200/CBET002289.txt'>CBET 2289</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "?",
-                "source": "1"
-            },
-            {
-                "type": "LBV",
-                "source": "2"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "Berto Monard",
-        "discovermonth": "10",
-        "discoveryear": "2010",
-        "galdec": "-374104",
-        "galra": "005454",
-        "host": "NGC 300",
-        "hvel": "144",
-        "lumdist": "2.1251",
-        "maxabsmag": "-10.737",
-        "maxappmag": "15.9",
-        "maxday": "20",
-        "maxmonth": "10",
-        "maxyear": "2010",
-        "redshift": "0.00048",
-        "sndec": "-37:41:43.7",
-        "snra": "00:55:04.86",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55489.5",
-                "band": "",
-                "abmag": "15.9",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2010da":{
+		"name":"SN2010da",
+		"aliases":[
+			"SN2010da"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2289",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002200/CBET002289.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"LBV",
+				"source":"2,3"
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"Berto Monard",
+		"discovermonth":"10",
+		"discoveryear":"2010",
+		"galdec":[
+			{
+				"value":"-37:41:04",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"00:54:54",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"NGC 300",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"144",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"2",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-10",
+		"maxappmag":"15.9",
+		"maxday":"20",
+		"maxmonth":"10",
+		"maxyear":"2010",
+		"redshift":[
+			{
+				"value":"0.0005",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-37:41:43.7",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"00:55:04.86",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55489.5",
+				"band":"",
+				"abmag":"15.9",
+				"source":"2,3"
+			}
+		]
+	}
 }

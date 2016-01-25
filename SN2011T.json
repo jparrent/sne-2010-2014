@@ -1,57 +1,104 @@
 {
-    "SN2011T": {
-        "name": "SN2011T",
-        "aliases": [
-            "SN2011T",
-            "PSN J17100362+3230012"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002646.txt'>CBET 2646</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "27",
-        "discoverer": "Tim Puckett et al.",
-        "discovermonth": "1",
-        "discoveryear": "2011",
-        "galdec": "+323000",
-        "galra": "171005",
-        "host": "UGC 10733",
-        "hvel": "8752",
-        "lumdist": "134.08",
-        "maxabsmag": "-19.337",
-        "maxappmag": "16.3",
-        "maxday": "27",
-        "maxmonth": "1",
-        "maxyear": "2011",
-        "redshift": "0.02963",
-        "sndec": "+32:30:01.2",
-        "snra": "17:10:03.61",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55588.5",
-                "band": "",
-                "abmag": "16.3",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011T":{
+		"name":"SN2011T",
+		"aliases":[
+			"SN2011T",
+			"PSN J17100362+3230012"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2646",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002646.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"27",
+		"discoverer":"Tim Puckett et al.",
+		"discovermonth":"1",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+32:30:00",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"17:10:05",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 10733",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"8752",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"130",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"16.3",
+		"maxday":"27",
+		"maxmonth":"1",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.029",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+32:30:01.2",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"17:10:03.62",
+				"source":"1"
+			},
+			{
+				"value":"17:10:03.61",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55588.5",
+				"band":"",
+				"abmag":"16.3",
+				"source":"2,3"
+			}
+		]
+	}
 }

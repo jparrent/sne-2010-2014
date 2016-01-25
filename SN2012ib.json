@@ -1,57 +1,100 @@
 {
-    "SN2012ib": {
-        "name": "SN2012ib",
-        "aliases": [
-            "SN2012ib",
-            "PSN J15035487+4206553"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003300/CBET003359.txt'>CBET 3359</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ib/c",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "19",
-        "discoverer": "MASTER",
-        "discovermonth": "12",
-        "discoveryear": "2012",
-        "galdec": "+420656",
-        "galra": "150350",
-        "host": "UGC 9684",
-        "hvel": "5096",
-        "lumdist": "76.893",
-        "maxabsmag": "-18.429",
-        "maxappmag": "16",
-        "maxday": "19",
-        "maxmonth": "12",
-        "maxyear": "2012",
-        "redshift": "0.01715",
-        "sndec": "+42:06:55.3",
-        "snra": "15:03:54.87",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56280.5",
-                "band": "",
-                "abmag": "16.0",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012ib":{
+		"name":"SN2012ib",
+		"aliases":[
+			"SN2012ib",
+			"PSN J15035487+4206553"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3359",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003300/CBET003359.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ib/c",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"19",
+		"discoverer":"MASTER",
+		"discovermonth":"12",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+42:06:56",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"15:03:50",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 9684",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"5096",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"75.631",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.394",
+		"maxappmag":"16",
+		"maxday":"19",
+		"maxmonth":"12",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.016872",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+42:06:55.3",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"15:03:54.87",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56280.5",
+				"band":"",
+				"abmag":"16.0",
+				"source":"2,3"
+			}
+		]
+	}
 }

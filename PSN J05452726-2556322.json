@@ -1,42 +1,69 @@
 {
-    "PSN J05452726-2556322": {
-        "name": "PSN J05452726-2556322",
-        "aliases": [
-            "PSN J05452726-2556322"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J05452726-2556322.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "TAROT La Silla telescope",
-        "discovermonth": "12",
-        "discoveryear": "2012",
-        "hvel": "12860",
-        "lumdist": "200.578",
-        "maxabsmag": "-18.8114",
-        "maxappmag": "17.7",
-        "maxday": "20",
-        "maxmonth": "12",
-        "maxyear": "2012",
-        "redshift": "0.04387",
-        "sndec": "-25:56:32.2",
-        "snra": "05:45:27.26",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56281.5",
-                "band": "",
-                "abmag": "17.7",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J05452726-2556322":{
+		"name":"PSN J05452726-2556322",
+		"aliases":[
+			"PSN J05452726-2556322"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J05452726-2556322.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"TAROT La Silla telescope",
+		"discovermonth":"12",
+		"discoveryear":"2012",
+		"hvel":[
+			{
+				"value":"12863",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"200.58",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.811",
+		"maxappmag":"17.7",
+		"maxday":"20",
+		"maxmonth":"12",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.043867",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-25:56:32.2",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"05:45:27.26",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56281.5",
+				"band":"",
+				"abmag":"17.7",
+				"source":"1,2"
+			}
+		]
+	}
 }

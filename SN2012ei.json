@@ -1,57 +1,108 @@
 {
-    "SN2012ei": {
-        "name": "SN2012ei",
-        "aliases": [
-            "SN2012ei",
-            "PSN J14240571+3302565"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003209.txt'>CBET 3209</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "3",
-        "discoverer": "Yoji Hirose",
-        "discovermonth": "9",
-        "discoveryear": "2012",
-        "galdec": "+330251",
-        "galra": "142405",
-        "host": "NGC 5611",
-        "hvel": "1924",
-        "lumdist": "28.6328",
-        "maxabsmag": "-19.0843",
-        "maxappmag": "13.2",
-        "maxday": "3",
-        "maxmonth": "9",
-        "maxyear": "2012",
-        "redshift": "0.006438",
-        "sndec": "+33:02:56.5",
-        "snra": "14:24:05.71",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56173.5",
-                "band": "",
-                "abmag": "13.2",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012ei":{
+		"name":"SN2012ei",
+		"aliases":[
+			"SN2012ei",
+			"PSN J14240571+3302565"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3209",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003209.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"3",
+		"discoverer":"Yoji Hirose",
+		"discovermonth":"9",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+33:02:51",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"14:24:05",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"NGC 5611",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"1924",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"29.9",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.18",
+		"maxappmag":"13.2",
+		"maxday":"3",
+		"maxmonth":"9",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.006721",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+33:02:57.2",
+				"source":"1"
+			},
+			{
+				"value":"+33:02:56.5",
+				"source":"2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"14:24:05.76",
+				"source":"1"
+			},
+			{
+				"value":"14:24:05.71",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56173.5",
+				"band":"",
+				"abmag":"13.2",
+				"source":"2,3"
+			}
+		]
+	}
 }

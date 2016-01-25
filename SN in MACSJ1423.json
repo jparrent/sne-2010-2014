@@ -1,48 +1,75 @@
 {
-    "SN in MACSJ1423": {
-        "name": "SN in MACSJ1423",
-        "aliases": [
-            "SN in MACSJ1423"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=4778'>ATEL 4778</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "18",
-        "discoverer": "HST",
-        "discovermonth": "1",
-        "discoveryear": "2013",
-        "hvel": "123000",
-        "lumdist": "3240",
-        "maxabsmag": "-19.8",
-        "maxappmag": "22.8",
-        "maxday": "18",
-        "maxmonth": "1",
-        "maxyear": "2013",
-        "redshift": "0.545",
-        "sndec": "+24:04:33.3",
-        "snra": "14:23:47.62",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56310.5",
-                "band": "",
-                "abmag": "22.8",
-                "source": "2,1"
-            }
-        ]
-    }
+	"SN in MACSJ1423":{
+		"name":"SN in MACSJ1423",
+		"aliases":[
+			"SN in MACSJ1423"
+		],
+		"sources":[
+			{
+				"name":"ATEL 4778",
+				"url":"http://www.astronomerstelegram.org/?read=4778",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"18",
+		"discoverer":"HST",
+		"discovermonth":"1",
+		"discoveryear":"2013",
+		"hvel":[
+			{
+				"value":"123000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"3240",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.8",
+		"maxappmag":"22.8",
+		"maxday":"18",
+		"maxmonth":"1",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.545",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+24:04:33.3",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"14:23:47.62",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56310.5",
+				"band":"",
+				"abmag":"22.8",
+				"source":"1,2"
+			}
+		]
+	}
 }

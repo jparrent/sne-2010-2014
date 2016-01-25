@@ -1,57 +1,100 @@
 {
-    "SN2013et": {
-        "name": "SN2013et",
-        "aliases": [
-            "SN2013et",
-            "PSN J02141705+0735118"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003624.txt'>CBET 3624</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "1",
-        "discoverer": "Italian Supernovae Search Project",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "galdec": "+073518",
-        "galra": "021417",
-        "host": "UGC 1723",
-        "hvel": "17140",
-        "lumdist": "272.17",
-        "maxabsmag": "-18.7742",
-        "maxappmag": "18.4",
-        "maxday": "1",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "redshift": "0.05889",
-        "sndec": "+07:35:11.8",
-        "snra": "02:14:17.05",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56505.5",
-                "band": "",
-                "abmag": "18.4",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2013et":{
+		"name":"SN2013et",
+		"aliases":[
+			"SN2013et",
+			"PSN J02141705+0735118"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3624",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003624.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"1",
+		"discoverer":"Italian Supernovae Search Project",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"galdec":[
+			{
+				"value":"+07:35:18",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"02:14:17",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 1723",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"17136",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"272.17",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.774",
+		"maxappmag":"18.4",
+		"maxday":"1",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.058891",
+				"source":"D"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+07:35:11.8",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"02:14:17.05",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56505.5",
+				"band":"",
+				"abmag":"18.4",
+				"source":"2,3"
+			}
+		]
+	}
 }

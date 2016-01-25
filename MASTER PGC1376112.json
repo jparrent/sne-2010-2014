@@ -1,39 +1,56 @@
 {
-    "MASTER PGC1376112": {
-        "name": "MASTER PGC1376112",
-        "aliases": [
-            "MASTER PGC1376112"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3891'>ATEL 3891</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "21",
-        "discoverer": "MASTER",
-        "discovermonth": "1",
-        "discoveryear": "2012",
-        "host": "PGC 1376112",
-        "maxappmag": "17.7",
-        "maxday": "21",
-        "maxmonth": "1",
-        "maxyear": "2012",
-        "sndec": "+10:12:06.1",
-        "snra": "07:59:17.19",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55947.5",
-                "band": "",
-                "abmag": "17.7",
-                "source": "2,1"
-            }
-        ]
-    }
+	"MASTER PGC1376112":{
+		"name":"MASTER PGC1376112",
+		"aliases":[
+			"MASTER PGC1376112"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3891",
+				"url":"http://www.astronomerstelegram.org/?read=3891",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"21",
+		"discoverer":"MASTER",
+		"discovermonth":"1",
+		"discoveryear":"2012",
+		"host":[
+			{
+				"value":"PGC 1376112",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":"17.7",
+		"maxday":"21",
+		"maxmonth":"1",
+		"maxyear":"2012",
+		"sndec":[
+			{
+				"value":"+10:12:06.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"07:59:17.19",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55947.5",
+				"band":"",
+				"abmag":"17.7",
+				"source":"1,2"
+			}
+		]
+	}
 }

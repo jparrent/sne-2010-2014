@@ -1,48 +1,75 @@
 {
-    "PS1-1000014": {
-        "name": "PS1-1000014",
-        "aliases": [
-            "PS1-1000014"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=2397'>ATEL 2397</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "15",
-        "discoverer": "PS1",
-        "discovermonth": "1",
-        "discoveryear": "2010",
-        "hvel": "110000",
-        "lumdist": "2600",
-        "maxabsmag": "-20",
-        "maxappmag": "22.3",
-        "maxday": "15",
-        "maxmonth": "1",
-        "maxyear": "2010",
-        "redshift": "0.46",
-        "sndec": "+03:08:39.22",
-        "snra": "10:03:14.382",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55211.5",
-                "band": "",
-                "abmag": "22.3",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PS1-1000014":{
+		"name":"PS1-1000014",
+		"aliases":[
+			"PS1-1000014"
+		],
+		"sources":[
+			{
+				"name":"ATEL 2397",
+				"url":"http://www.astronomerstelegram.org/?read=2397",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"15",
+		"discoverer":"PS1",
+		"discovermonth":"1",
+		"discoveryear":"2010",
+		"hvel":[
+			{
+				"value":"110000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"2600",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"22.3",
+		"maxday":"15",
+		"maxmonth":"1",
+		"maxyear":"2010",
+		"redshift":[
+			{
+				"value":"0.46",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+03:08:39.22",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:03:14.382",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55211.5",
+				"band":"",
+				"abmag":"22.3",
+				"source":"1,2"
+			}
+		]
+	}
 }

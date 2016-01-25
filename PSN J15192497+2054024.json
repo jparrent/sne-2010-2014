@@ -1,50 +1,82 @@
 {
-    "PSN J15192497+2054024": {
-        "name": "PSN J15192497+2054024",
-        "aliases": [
-            "PSN J15192497+2054024",
-            "SNhunt175"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J15192497+2054024.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "18",
-        "discoverer": "CRTS",
-        "discovermonth": "3",
-        "discoveryear": "2013",
-        "host": "NGC 5910",
-        "hvel": "12000",
-        "lumdist": "186.508",
-        "maxabsmag": "-18.5535",
-        "maxappmag": "17.8",
-        "maxday": "18",
-        "maxmonth": "3",
-        "maxyear": "2013",
-        "redshift": "0.04088",
-        "sndec": "+20:54:02.4",
-        "snra": "15:19:24.97",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56369.5",
-                "band": "",
-                "abmag": "17.8",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J15192497+2054024":{
+		"name":"PSN J15192497+2054024",
+		"aliases":[
+			"PSN J15192497+2054024",
+			"SNhunt175"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J15192497+2054024.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"18",
+		"discoverer":"CRTS",
+		"discovermonth":"3",
+		"discoveryear":"2013",
+		"host":[
+			{
+				"value":"NGC 5910",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"12005",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"186.51",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.553",
+		"maxappmag":"17.8",
+		"maxday":"18",
+		"maxmonth":"3",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.040878",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+20:54:02.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"15:19:24.97",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56369.5",
+				"band":"",
+				"abmag":"17.8",
+				"source":"1,2"
+			}
+		]
+	}
 }

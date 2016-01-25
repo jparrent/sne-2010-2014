@@ -1,57 +1,100 @@
 {
-    "SN2012fh": {
-        "name": "SN2012fh",
-        "aliases": [
-            "SN2012fh",
-            "PSN J10433405+2453290"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003263.txt'>CBET 3263</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ic",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "17",
-        "discoverer": "Masaki Tsuboi",
-        "discovermonth": "10",
-        "discoveryear": "2012",
-        "galdec": "+245520",
-        "galra": "104331",
-        "host": "NGC 3344",
-        "hvel": "575",
-        "lumdist": "8.5097",
-        "maxabsmag": "-14.55",
-        "maxappmag": "15.1",
-        "maxday": "17",
-        "maxmonth": "10",
-        "maxyear": "2012",
-        "redshift": "0.00192",
-        "sndec": "+24:53:29.0",
-        "snra": "10:43:34.05",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56217.5",
-                "band": "",
-                "abmag": "15.1",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012fh":{
+		"name":"SN2012fh",
+		"aliases":[
+			"SN2012fh",
+			"PSN J10433405+2453290"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3263",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003263.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ic",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"17",
+		"discoverer":"Masaki Tsuboi",
+		"discovermonth":"10",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+24:55:20",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"10:43:31",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"NGC 3344",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"575",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"8.576",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-14.57",
+		"maxappmag":"15.1",
+		"maxday":"17",
+		"maxmonth":"10",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.001935",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+24:53:29.0",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:43:34.05",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56217.5",
+				"band":"",
+				"abmag":"15.1",
+				"source":"2,3"
+			}
+		]
+	}
 }

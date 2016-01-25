@@ -1,44 +1,56 @@
 {
-    "CSS131031:095508+064831": {
-        "name": "CSS131031:095508+064831",
-        "aliases": [
-            "CSS131031:095508+064831"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5659'>ATEL 5659</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "30",
-        "discoverer": "CRTS",
-        "discovermonth": "10",
-        "discoveryear": "2013",
-        "maxappmag": "18.7",
-        "maxday": "30",
-        "maxmonth": "10",
-        "maxyear": "2013",
-        "sndec": "+06:48:31.4",
-        "snra": "09:55:08.22",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56595.5",
-                "band": "",
-                "abmag": "18.7",
-                "source": "2,1"
-            }
-        ]
-    }
+	"CSS131031:095508+064831":{
+		"name":"CSS131031:095508+064831",
+		"aliases":[
+			"CSS131031:095508+064831"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5659",
+				"url":"http://www.astronomerstelegram.org/?read=5659",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"30",
+		"discoverer":"CRTS",
+		"discovermonth":"10",
+		"discoveryear":"2013",
+		"maxappmag":"18.7",
+		"maxday":"30",
+		"maxmonth":"10",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+06:48:31.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:55:08.22",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56595.5",
+				"band":"",
+				"abmag":"18.7",
+				"source":"1,2"
+			}
+		]
+	}
 }

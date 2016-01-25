@@ -1,38 +1,50 @@
 {
-    "CSS110404:090902+163354": {
-        "name": "CSS110404:090902+163354",
-        "aliases": [
-            "CSS110404:090902+163354"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3262'>ATEL 3262</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "3",
-        "discoverer": "CRTS",
-        "discovermonth": "4",
-        "discoveryear": "2011",
-        "maxappmag": "19",
-        "maxday": "3",
-        "maxmonth": "4",
-        "maxyear": "2011",
-        "sndec": "+16:33:53.6",
-        "snra": "09:09:02.19",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55654.5",
-                "band": "",
-                "abmag": "19.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"CSS110404:090902+163354":{
+		"name":"CSS110404:090902+163354",
+		"aliases":[
+			"CSS110404:090902+163354"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3262",
+				"url":"http://www.astronomerstelegram.org/?read=3262",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"3",
+		"discoverer":"CRTS",
+		"discovermonth":"4",
+		"discoveryear":"2011",
+		"maxappmag":"19",
+		"maxday":"3",
+		"maxmonth":"4",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+16:33:53.6",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:09:02.19",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55654.5",
+				"band":"",
+				"abmag":"19.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

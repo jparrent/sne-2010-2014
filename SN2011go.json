@@ -1,61 +1,112 @@
 {
-    "SN2011go": {
-        "name": "SN2011go",
-        "aliases": [
-            "SN2011go",
-            "PSN J06555100+4041466"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002800/CBET002849.txt'>CBET 2849</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1"
-            },
-            {
-                "type": "II P",
-                "source": "2"
-            }
-        ],
-        "discoverday": "12",
-        "discoverer": "Tom Boles",
-        "discovermonth": "10",
-        "discoveryear": "2011",
-        "galdec": "+404139",
-        "galra": "065551",
-        "host": "MCG +7-15-2",
-        "hvel": "6250",
-        "lumdist": "94.88",
-        "maxabsmag": "-17.09",
-        "maxappmag": "17.8",
-        "maxday": "12",
-        "maxmonth": "10",
-        "maxyear": "2011",
-        "redshift": "0.0211",
-        "sndec": "+40:41:46.5",
-        "snra": "06:55:51.00",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55846.5",
-                "band": "",
-                "abmag": "17.8",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011go":{
+		"name":"SN2011go",
+		"aliases":[
+			"SN2011go",
+			"PSN J06555100+4041466"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2849",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002800/CBET002849.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1"
+			},
+			{
+				"value":"II P",
+				"source":"2,3"
+			}
+		],
+		"discoverday":"12",
+		"discoverer":"Tom Boles",
+		"discovermonth":"10",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+40:41:39",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"06:55:51",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"M+07-15-02",
+				"source":"1"
+			},
+			{
+				"value":"MCG +7-15-2",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"6250",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"94",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-17.1",
+		"maxappmag":"17.8",
+		"maxday":"12",
+		"maxmonth":"10",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.0209",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+40:41:46.6",
+				"source":"1"
+			},
+			{
+				"value":"+40:41:46.5",
+				"source":"2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"06:55:51.00",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55846.5",
+				"band":"",
+				"abmag":"17.8",
+				"source":"2,3"
+			}
+		]
+	}
 }

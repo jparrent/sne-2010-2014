@@ -1,42 +1,69 @@
 {
-    "LSQ13bvs": {
-        "name": "LSQ13bvs",
-        "aliases": [
-            "LSQ13bvs"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5329'>ATEL 5329</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "La Silla-QUEST",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "hvel": "10000",
-        "lumdist": "154",
-        "maxabsmag": "-17.9",
-        "maxappmag": "18",
-        "maxday": "24",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "redshift": "0.034",
-        "sndec": "-31:37:50.4",
-        "snra": "20:36:55.12",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56528.5",
-                "band": "",
-                "abmag": "18.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"LSQ13bvs":{
+		"name":"LSQ13bvs",
+		"aliases":[
+			"LSQ13bvs"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5329",
+				"url":"http://www.astronomerstelegram.org/?read=5329",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"La Silla-QUEST",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"hvel":[
+			{
+				"value":"10000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"150",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18",
+		"maxappmag":"18",
+		"maxday":"24",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.034",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-31:37:50.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"20:36:55.12",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56528.5",
+				"band":"",
+				"abmag":"18.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

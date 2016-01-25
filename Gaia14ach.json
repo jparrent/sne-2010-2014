@@ -1,42 +1,69 @@
 {
-    "Gaia14ach": {
-        "name": "Gaia14ach",
-        "aliases": [
-            "Gaia14ach"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://gaia.ac.uk/selected-gaia-science-alerts'>GAIA page</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "12",
-        "discoverer": "Gaia Photometric Science Alerts programme",
-        "discovermonth": "10",
-        "discoveryear": "2014",
-        "hvel": "15000",
-        "lumdist": "230",
-        "maxabsmag": "-18",
-        "maxappmag": "18.5",
-        "maxday": "12",
-        "maxmonth": "10",
-        "maxyear": "2014",
-        "redshift": "0.05",
-        "sndec": "+17:01:31.7",
-        "snra": "15:46:48.61",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56942.5",
-                "band": "",
-                "abmag": "18.5",
-                "source": "2,1"
-            }
-        ]
-    }
+	"Gaia14ach":{
+		"name":"Gaia14ach",
+		"aliases":[
+			"Gaia14ach"
+		],
+		"sources":[
+			{
+				"name":"GAIA page",
+				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"12",
+		"discoverer":"Gaia Photometric Science Alerts programme",
+		"discovermonth":"10",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"10000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"200",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"18.5",
+		"maxday":"12",
+		"maxmonth":"10",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.05",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+17:01:31.7",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"15:46:48.61",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56942.5",
+				"band":"",
+				"abmag":"18.5",
+				"source":"1,2"
+			}
+		]
+	}
 }

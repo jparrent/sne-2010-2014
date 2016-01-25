@@ -1,57 +1,104 @@
 {
-    "SN2011cc": {
-        "name": "SN2011cc",
-        "aliases": [
-            "SN2011cc",
-            "PSN J16334944+3915487"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002712.txt'>CBET 2712</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "IIn",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "16",
-        "discoverer": "LOSS",
-        "discovermonth": "3",
-        "discoveryear": "2011",
-        "galdec": "+391547",
-        "galra": "163350",
-        "host": "IC 4612",
-        "hvel": "9620",
-        "lumdist": "147.8",
-        "maxabsmag": "-18.15",
-        "maxappmag": "17.7",
-        "maxday": "16",
-        "maxmonth": "3",
-        "maxyear": "2011",
-        "redshift": "0.0326",
-        "sndec": "+39:15:48.7",
-        "snra": "16:33:49.43",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55636.5",
-                "band": "",
-                "abmag": "17.7",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011cc":{
+		"name":"SN2011cc",
+		"aliases":[
+			"SN2011cc",
+			"PSN J16334944+3915487"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2712",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002712.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"IIn",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"16",
+		"discoverer":"LOSS",
+		"discovermonth":"3",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+39:15:47",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"16:33:50",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"IC 4612",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"9620",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"145",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.1",
+		"maxappmag":"17.7",
+		"maxday":"16",
+		"maxmonth":"3",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.0319",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+39:15:48.7",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"16:33:49.44",
+				"source":"1"
+			},
+			{
+				"value":"16:33:49.43",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55636.5",
+				"band":"",
+				"abmag":"17.7",
+				"source":"2,3"
+			}
+		]
+	}
 }

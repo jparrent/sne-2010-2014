@@ -1,38 +1,50 @@
 {
-    "SNHunt49": {
-        "name": "SNHunt49",
-        "aliases": [
-            "SNHunt49"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://nesssi.cacr.caltech.edu/catalina/current.html'>SNHunt</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "28",
-        "discoverer": "CRTS",
-        "discovermonth": "3",
-        "discoveryear": "2011",
-        "maxappmag": "20",
-        "maxday": "28",
-        "maxmonth": "3",
-        "maxyear": "2011",
-        "sndec": "+15:30:47.0",
-        "snra": "04:09:06.80",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55648.5",
-                "band": "",
-                "abmag": "20.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"SNHunt49":{
+		"name":"SNHunt49",
+		"aliases":[
+			"SNHunt49"
+		],
+		"sources":[
+			{
+				"name":"SNHunt",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"28",
+		"discoverer":"CRTS",
+		"discovermonth":"3",
+		"discoveryear":"2011",
+		"maxappmag":"20",
+		"maxday":"28",
+		"maxmonth":"3",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+15:30:47.0",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"04:09:06.80",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55648.5",
+				"band":"",
+				"abmag":"20.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

@@ -1,122 +1,165 @@
 {
-    "SN2014R": {
-        "name": "SN2014R",
-        "aliases": [
-            "SN2014R",
-            "PS1-14mt"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003809.txt'>CBET 3909</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Manfred Mrotzek",
-                "alias": "4"
-            },
-            {
-                "name": "Marc Serrau",
-                "alias": "5"
-            },
-            {
-                "name": "LLA",
-                "alias": "6"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia P",
-                "source": "1"
-            },
-            {
-                "type": "Ia-91T",
-                "source": "2"
-            }
-        ],
-        "discoverday": "27",
-        "discoverer": "THU-NAOC Transient Survey (TNTS)",
-        "discovermonth": "2",
-        "discoveryear": "2014",
-        "galdec": "+555109",
-        "galra": "093012",
-        "host": "UGC 5055",
-        "hvel": "7455",
-        "lumdist": "113.57",
-        "maxabsmag": "-19.576",
-        "maxappmag": "15.7",
-        "maxday": "27",
-        "maxmonth": "2",
-        "maxyear": "2014",
-        "redshift": "0.02518",
-        "sndec": "+55:51:13.5",
-        "snra": "09:30:12.30",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56715.5",
-                "band": "",
-                "abmag": "15.7",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56716.908",
-                "band": "U",
-                "abmag": "15.7",
-                "source": "4,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56722.873",
-                "band": "R",
-                "abmag": "16.5",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56722.883",
-                "band": "V",
-                "abmag": "16.2",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56723.124",
-                "band": "g",
-                "abmag": "16.5",
-                "source": "6,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56725.819",
-                "band": "CR",
-                "abmag": "16.4",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56725.828",
-                "band": "R",
-                "abmag": "16.3",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56725.833",
-                "band": "V",
-                "abmag": "16.6",
-                "source": "5,2"
-            }
-        ]
-    }
+	"SN2014R":{
+		"name":"SN2014R",
+		"aliases":[
+			"SN2014R",
+			"PS1-14mt"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3909",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003809.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Manfred Mrotzek",
+				"alias":"4"
+			},
+			{
+				"name":"Marc Serrau",
+				"alias":"5"
+			},
+			{
+				"name":"LLA",
+				"alias":"6"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia P",
+				"source":"1"
+			},
+			{
+				"value":"Ia-91T",
+				"source":"2,3"
+			}
+		],
+		"discoverday":"27",
+		"discoverer":"THU-NAOC Transient Survey (TNTS)",
+		"discovermonth":"2",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+55:51:09",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"09:30:12",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 5055",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"7455",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"113.45",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.574",
+		"maxappmag":"15.7",
+		"maxday":"27",
+		"maxmonth":"2",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.025154",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+55:51:13.5",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:30:12.30",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56715.5",
+				"band":"",
+				"abmag":"15.7",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56716.908",
+				"band":"U",
+				"abmag":"15.7",
+				"source":"4,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56722.873",
+				"band":"R",
+				"abmag":"16.5",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56722.883",
+				"band":"V",
+				"abmag":"16.2",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56723.124",
+				"band":"g",
+				"abmag":"16.5",
+				"source":"6,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56725.819",
+				"band":"CR",
+				"abmag":"16.4",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56725.828",
+				"band":"R",
+				"abmag":"16.3",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56725.833",
+				"band":"V",
+				"abmag":"16.6",
+				"source":"5,3"
+			}
+		]
+	}
 }

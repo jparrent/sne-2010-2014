@@ -1,56 +1,99 @@
 {
-    "SN2011ea": {
-        "name": "SN2011ea",
-        "aliases": [
-            "SN2011ea"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002762.txt'>CBET 2762</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "30",
-        "discoverer": "CRTS",
-        "discovermonth": "6",
-        "discoveryear": "2011",
-        "galdec": "+040949",
-        "galra": "122736",
-        "host": "A122736+0409",
-        "hvel": "30100",
-        "lumdist": "506",
-        "maxabsmag": "-19.3",
-        "maxappmag": "19.2",
-        "maxday": "30",
-        "maxmonth": "6",
-        "maxyear": "2011",
-        "redshift": "0.106",
-        "sndec": "+04:09:49.5",
-        "snra": "12:27:36.38",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55742.5",
-                "band": "",
-                "abmag": "19.2",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011ea":{
+		"name":"SN2011ea",
+		"aliases":[
+			"SN2011ea"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2762",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002762.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"30",
+		"discoverer":"CRTS",
+		"discovermonth":"6",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+04:09:49",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"12:27:36",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A122736+0409",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"30100",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"506",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.3",
+		"maxappmag":"19.2",
+		"maxday":"30",
+		"maxmonth":"6",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.106",
+				"source":"1,2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+04:09:49.5",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"12:27:36.38",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55742.5",
+				"band":"",
+				"abmag":"19.2",
+				"source":"2,3"
+			}
+		]
+	}
 }

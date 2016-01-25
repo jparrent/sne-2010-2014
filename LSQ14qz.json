@@ -1,48 +1,75 @@
 {
-    "LSQ14qz": {
-        "name": "LSQ14qz",
-        "aliases": [
-            "LSQ14qz"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5864'>ATEL 5864</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "2",
-        "discoverer": "La Silla-QUEST",
-        "discovermonth": "2",
-        "discoveryear": "2014",
-        "hvel": "30400",
-        "lumdist": "511",
-        "maxabsmag": "-19.3",
-        "maxappmag": "19.2",
-        "maxday": "2",
-        "maxmonth": "2",
-        "maxyear": "2014",
-        "redshift": "0.107",
-        "sndec": "-25:58:02.8",
-        "snra": "12:02:45.83",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56690.5",
-                "band": "",
-                "abmag": "19.2",
-                "source": "2,1"
-            }
-        ]
-    }
+	"LSQ14qz":{
+		"name":"LSQ14qz",
+		"aliases":[
+			"LSQ14qz"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5864",
+				"url":"http://www.astronomerstelegram.org/?read=5864",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"2",
+		"discoverer":"La Silla-QUEST",
+		"discovermonth":"2",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"30400",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"511",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.3",
+		"maxappmag":"19.2",
+		"maxday":"2",
+		"maxmonth":"2",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.107",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-25:58:02.8",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"12:02:45.83",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56690.5",
+				"band":"",
+				"abmag":"19.2",
+				"source":"1,2"
+			}
+		]
+	}
 }

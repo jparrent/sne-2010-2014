@@ -1,39 +1,51 @@
 {
-    "PSN J04135273+1703481": {
-        "name": "PSN J04135273+1703481",
-        "aliases": [
-            "PSN J04135273+1703481",
-            "MLS111228:041353+170348"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J04135273+1703481.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "CRTS",
-        "discovermonth": "1",
-        "discoveryear": "2011",
-        "maxappmag": "17.6",
-        "maxday": "20",
-        "maxmonth": "1",
-        "maxyear": "2011",
-        "sndec": "+17:03:48.0",
-        "snra": "04:13:52.72",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55581.5",
-                "band": "",
-                "abmag": "17.6",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J04135273+1703481":{
+		"name":"PSN J04135273+1703481",
+		"aliases":[
+			"PSN J04135273+1703481",
+			"MLS111228:041353+170348"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J04135273+1703481.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"CRTS",
+		"discovermonth":"1",
+		"discoveryear":"2011",
+		"maxappmag":"17.6",
+		"maxday":"20",
+		"maxmonth":"1",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+17:03:48.0",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"04:13:52.72",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55581.5",
+				"band":"",
+				"abmag":"17.6",
+				"source":"1,2"
+			}
+		]
+	}
 }

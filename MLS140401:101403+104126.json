@@ -1,49 +1,61 @@
 {
-    "MLS140401:101403+104126": {
-        "name": "MLS140401:101403+104126",
-        "aliases": [
-            "MLS140401:101403+104126"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://nesssi.cacr.caltech.edu/catalina/AllSN.html'>CRTS SN page</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            }
-        ],
-        "discoverday": "31",
-        "discoverer": "CRTS",
-        "discovermonth": "3",
-        "discoveryear": "2014",
-        "maxappmag": "20",
-        "maxday": "31",
-        "maxmonth": "3",
-        "maxyear": "2014",
-        "sndec": "+10:41:26.2",
-        "snra": "10:14:03.15",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56747.5",
-                "band": "",
-                "abmag": "20.0",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56751.262",
-                "band": "C",
-                "abmag": "21.3",
-                "source": "3,1"
-            }
-        ]
-    }
+	"MLS140401:101403+104126":{
+		"name":"MLS140401:101403+104126",
+		"aliases":[
+			"MLS140401:101403+104126"
+		],
+		"sources":[
+			{
+				"name":"CRTS SN page",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			}
+		],
+		"discoverday":"31",
+		"discoverer":"CRTS",
+		"discovermonth":"3",
+		"discoveryear":"2014",
+		"maxappmag":"20",
+		"maxday":"31",
+		"maxmonth":"3",
+		"maxyear":"2014",
+		"sndec":[
+			{
+				"value":"+10:41:26.2",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:14:03.15",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56747.5",
+				"band":"",
+				"abmag":"20.0",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56751.262",
+				"band":"C",
+				"abmag":"21.3",
+				"source":"3,2"
+			}
+		]
+	}
 }

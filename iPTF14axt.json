@@ -1,48 +1,75 @@
 {
-    "iPTF14axt": {
-        "name": "iPTF14axt",
-        "aliases": [
-            "iPTF14axt"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6218'>ATEL 6218</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "11",
-        "discoverer": "PTF",
-        "discovermonth": "5",
-        "discoveryear": "2014",
-        "hvel": "16960",
-        "lumdist": "269.18",
-        "maxabsmag": "-18.95",
-        "maxappmag": "18.2",
-        "maxday": "11",
-        "maxmonth": "5",
-        "maxyear": "2014",
-        "redshift": "0.05827",
-        "sndec": "+31:45:14.9",
-        "snra": "16:15:41.37",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56788.5",
-                "band": "",
-                "abmag": "18.2",
-                "source": "2,1"
-            }
-        ]
-    }
+	"iPTF14axt":{
+		"name":"iPTF14axt",
+		"aliases":[
+			"iPTF14axt"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6218",
+				"url":"http://www.astronomerstelegram.org/?read=6218",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"11",
+		"discoverer":"PTF",
+		"discovermonth":"5",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"16960",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"269.2",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.95",
+		"maxappmag":"18.2",
+		"maxday":"11",
+		"maxmonth":"5",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.05827",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+31:45:14.9",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"16:15:41.37",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56788.5",
+				"band":"",
+				"abmag":"18.2",
+				"source":"1,2"
+			}
+		]
+	}
 }

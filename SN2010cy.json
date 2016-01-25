@@ -1,72 +1,121 @@
 {
-    "SN2010cy": {
-        "name": "SN2010cy",
-        "aliases": [
-            "SN2010cy"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002200/CBET002287.txt'>CBET 2287</a>",
-                "alias": "3"
-            },
-            {
-                "name": "3 BVD CMC",
-                "alias": "4"
-            },
-            {
-                "name": "<a href='http://adsabs.harvard.edu/abs/2012A%26A...538A.120L'>2012A&A...538A.120L</a>",
-                "alias": "5"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "12",
-        "discoverer": "CRTS",
-        "discovermonth": "5",
-        "discoveryear": "2010",
-        "galdec": "+035816",
-        "galra": "144342",
-        "host": "A144342+0358",
-        "hvel": "11670",
-        "lumdist": "181.03",
-        "maxabsmag": "-19.689",
-        "maxappmag": "16.6",
-        "maxday": "12",
-        "maxmonth": "5",
-        "maxyear": "2010",
-        "redshift": "0.03971",
-        "sndec": "+03:58:16.2",
-        "snra": "14:43:42.85",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55328.5",
-                "band": "",
-                "abmag": "16.6",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "55364.954",
-                "band": "CR",
-                "abmag": "17.74",
-                "aberr": "0.04",
-                "source": "4,2"
-            }
-        ]
-    }
+	"SN2010cy":{
+		"name":"SN2010cy",
+		"aliases":[
+			"SN2010cy"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2287",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002200/CBET002287.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"3 BVD CMC",
+				"alias":"4"
+			},
+			{
+				"name":"2012A&A...538A.120L",
+				"url":"http://adsabs.harvard.edu/abs/2012A&A...538A.120L",
+				"bibcode":"2012A&A...538A.120L",
+				"alias":"5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"12",
+		"discoverer":"CRTS",
+		"discovermonth":"5",
+		"discoveryear":"2010",
+		"galdec":[
+			{
+				"value":"+03:58:16",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"14:43:42",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A144342+0358",
+				"source":"1"
+			},
+			{
+				"value":"(SDSSJ144342.78+35813.0)",
+				"source":"5"
+			}
+		],
+		"hvel":[
+			{
+				"value":"11670",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"177",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.6",
+		"maxappmag":"16.6",
+		"maxday":"12",
+		"maxmonth":"5",
+		"maxyear":"2010",
+		"redshift":[
+			{
+				"value":"0.0389",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+03:58:16.2",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"14:43:42.85",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55328.5",
+				"band":"",
+				"abmag":"16.6",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"55364.954",
+				"band":"CR",
+				"abmag":"17.74",
+				"aberr":"0.04",
+				"source":"4,3"
+			}
+		]
+	}
 }

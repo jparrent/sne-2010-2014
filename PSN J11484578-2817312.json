@@ -1,71 +1,103 @@
 {
-    "PSN J11484578-2817312": {
-        "name": "PSN J11484578-2817312",
-        "aliases": [
-            "PSN J11484578-2817312"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J11484578-2817312.html'>CBAT TOCP</a>",
-                "alias": "2"
-            },
-            {
-                "name": "CHASE",
-                "alias": "3"
-            },
-            {
-                "name": "L. Elenin and I. Molotov",
-                "alias": "4"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ic",
-                "source": "1"
-            }
-        ],
-        "discoverday": "26",
-        "discoverer": "CHASE",
-        "discovermonth": "11",
-        "discoveryear": "2013",
-        "host": "ESO 440-G11",
-        "hvel": "3000",
-        "lumdist": "45",
-        "maxabsmag": "-18",
-        "maxappmag": "15",
-        "maxday": "26",
-        "maxmonth": "11",
-        "maxyear": "2013",
-        "redshift": "0.01",
-        "sndec": "-28:17:31.2",
-        "snra": "11:48:45.78",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56622.5",
-                "band": "",
-                "abmag": "15.0",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56623.0",
-                "band": "C",
-                "abmag": "15.0",
-                "source": "3,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56625.4829",
-                "band": "R",
-                "abmag": "16.2",
-                "source": "4,1"
-            }
-        ]
-    }
+	"PSN J11484578-2817312":{
+		"name":"PSN J11484578-2817312",
+		"aliases":[
+			"PSN J11484578-2817312"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J11484578-2817312.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"CHASE",
+				"alias":"3"
+			},
+			{
+				"name":"L. Elenin and I. Molotov",
+				"alias":"4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ic",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"26",
+		"discoverer":"CHASE",
+		"discovermonth":"11",
+		"discoveryear":"2013",
+		"host":[
+			{
+				"value":"ESO 440-G11",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"3000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"40",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"15",
+		"maxday":"26",
+		"maxmonth":"11",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.01",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-28:17:31.2",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:48:45.78",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56622.5",
+				"band":"",
+				"abmag":"15.0",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56623.0",
+				"band":"C",
+				"abmag":"15.0",
+				"source":"3,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56625.4829",
+				"band":"R",
+				"abmag":"16.2",
+				"source":"4,2"
+			}
+		]
+	}
 }

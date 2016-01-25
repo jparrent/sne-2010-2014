@@ -1,57 +1,100 @@
 {
-    "SN2013cr": {
-        "name": "SN2013cr",
-        "aliases": [
-            "SN2013cr",
-            "PSN J16114647+4051222"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003500/CBET003532.txt'>CBET 3532</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II P",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "THU-NAOC Transient Survey (TNTS)",
-        "discovermonth": "5",
-        "discoveryear": "2013",
-        "galdec": "+405119",
-        "galra": "161147",
-        "host": "PGC2171957",
-        "hvel": "8104",
-        "lumdist": "123.84",
-        "maxabsmag": "-18.864",
-        "maxappmag": "16.6",
-        "maxday": "20",
-        "maxmonth": "5",
-        "maxyear": "2013",
-        "redshift": "0.02741",
-        "sndec": "+40:51:22.2",
-        "snra": "16:11:46.47",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56432.5",
-                "band": "",
-                "abmag": "16.6",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2013cr":{
+		"name":"SN2013cr",
+		"aliases":[
+			"SN2013cr",
+			"PSN J16114647+4051222"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3532",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003500/CBET003532.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II P",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"THU-NAOC Transient Survey (TNTS)",
+		"discovermonth":"5",
+		"discoveryear":"2013",
+		"galdec":[
+			{
+				"value":"+40:51:19",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"16:11:47",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"PGC2171957",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"8104",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"121.05",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.815",
+		"maxappmag":"16.6",
+		"maxday":"20",
+		"maxmonth":"5",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.026805",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+40:51:22.2",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"16:11:46.47",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56432.5",
+				"band":"",
+				"abmag":"16.6",
+				"source":"2,3"
+			}
+		]
+	}
 }

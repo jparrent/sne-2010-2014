@@ -1,38 +1,50 @@
 {
-    "EMILIA": {
-        "name": "EMILIA",
-        "aliases": [
-            "EMILIA"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5949'>ATEL 5949</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "4",
-        "discoverer": "DECam",
-        "discovermonth": "3",
-        "discoveryear": "2014",
-        "maxappmag": "21",
-        "maxday": "4",
-        "maxmonth": "3",
-        "maxyear": "2014",
-        "sndec": "+01:08:32.431",
-        "snra": "11:34:31.961",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56720.5",
-                "band": "",
-                "abmag": "21.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"EMILIA":{
+		"name":"EMILIA",
+		"aliases":[
+			"EMILIA"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5949",
+				"url":"http://www.astronomerstelegram.org/?read=5949",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"4",
+		"discoverer":"DECam",
+		"discovermonth":"3",
+		"discoveryear":"2014",
+		"maxappmag":"21",
+		"maxday":"4",
+		"maxmonth":"3",
+		"maxyear":"2014",
+		"sndec":[
+			{
+				"value":"+01:08:32.431",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:34:31.961",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56720.5",
+				"band":"",
+				"abmag":"21.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

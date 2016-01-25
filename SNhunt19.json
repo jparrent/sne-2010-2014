@@ -1,39 +1,56 @@
 {
-    "SNhunt19": {
-        "name": "SNhunt19",
-        "aliases": [
-            "SNhunt19"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3031'>ATEL 3031</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "1",
-        "discoverer": "CRTS",
-        "discovermonth": "11",
-        "discoveryear": "2010",
-        "host": "ESO 189-G19",
-        "maxappmag": "19.3",
-        "maxday": "1",
-        "maxmonth": "11",
-        "maxyear": "2010",
-        "sndec": "-56:21:24.8",
-        "snra": "22:00:25.95",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55501.5",
-                "band": "",
-                "abmag": "19.3",
-                "source": "2,1"
-            }
-        ]
-    }
+	"SNhunt19":{
+		"name":"SNhunt19",
+		"aliases":[
+			"SNhunt19"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3031",
+				"url":"http://www.astronomerstelegram.org/?read=3031",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"1",
+		"discoverer":"CRTS",
+		"discovermonth":"11",
+		"discoveryear":"2010",
+		"host":[
+			{
+				"value":"ESO 189-G19",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":"19.3",
+		"maxday":"1",
+		"maxmonth":"11",
+		"maxyear":"2010",
+		"sndec":[
+			{
+				"value":"-56:21:24.8",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"22:00:25.95",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55501.5",
+				"band":"",
+				"abmag":"19.3",
+				"source":"1,2"
+			}
+		]
+	}
 }

@@ -1,49 +1,81 @@
 {
-    "ASASSN-14es": {
-        "name": "ASASSN-14es",
-        "aliases": [
-            "ASASSN-14es"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6358'>ATEL 6358</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "26",
-        "discoverer": "All Sky Automated Survey for SuperNovae (ASAS-SN)",
-        "discovermonth": "7",
-        "discoveryear": "2014",
-        "host": "IC 4462",
-        "hvel": "9064",
-        "lumdist": "139.059",
-        "maxabsmag": "-18.716",
-        "maxappmag": "17",
-        "maxday": "26",
-        "maxmonth": "7",
-        "maxyear": "2014",
-        "redshift": "0.0307",
-        "sndec": "+26:32:38.9",
-        "snra": "14:35:01.75",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56864.5",
-                "band": "",
-                "abmag": "17.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"ASASSN-14es":{
+		"name":"ASASSN-14es",
+		"aliases":[
+			"ASASSN-14es"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6358",
+				"url":"http://www.astronomerstelegram.org/?read=6358",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"26",
+		"discoverer":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+		"discovermonth":"7",
+		"discoveryear":"2014",
+		"host":[
+			{
+				"value":"IC 4462",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"9063.9",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"139.06",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.716",
+		"maxappmag":"17",
+		"maxday":"26",
+		"maxmonth":"7",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.030705",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+26:32:38.9",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"14:35:01.75",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56864.5",
+				"band":"",
+				"abmag":"17.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

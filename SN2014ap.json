@@ -1,90 +1,145 @@
 {
-    "SN2014ap": {
-        "name": "SN2014ap",
-        "aliases": [
-            "SN2014ap",
-            "PSN J11301337+2410072"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003856.txt'>CBET 3856</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "4"
-            },
-            {
-                "name": "Massimiliano Martignoni ",
-                "alias": "5"
-            },
-            {
-                "name": "Stan Howerton",
-                "alias": "6"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "22",
-        "discoverer": "Italian Supernovae Search Project",
-        "discovermonth": "3",
-        "discoveryear": "2014",
-        "galdec": "+241011",
-        "galra": "113013",
-        "host": "PGC 35452",
-        "hvel": "6998",
-        "lumdist": "106.41",
-        "maxabsmag": "-18.735",
-        "maxappmag": "16.4",
-        "maxday": "28",
-        "maxmonth": "3",
-        "maxyear": "2014",
-        "redshift": "0.02362",
-        "sndec": "+24:10:07.2",
-        "snra": "11:30:13.37",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56738.24",
-                "band": "C",
-                "abmag": "16.5",
-                "source": "4,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56744.5",
-                "band": "",
-                "abmag": "16.4",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56744.9",
-                "band": "V",
-                "abmag": "17.0",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56745.146",
-                "band": "U",
-                "abmag": "16.4",
-                "source": "6,2"
-            }
-        ]
-    }
+	"SN2014ap":{
+		"name":"SN2014ap",
+		"aliases":[
+			"SN2014ap",
+			"PSN J11301337+2410072"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3856",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003856.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"4"
+			},
+			{
+				"name":"Massimiliano Martignoni",
+				"alias":"5"
+			},
+			{
+				"name":"Stan Howerton",
+				"alias":"6"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"22",
+		"discoverer":"Italian Supernovae Search Project",
+		"discovermonth":"3",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+24:10:11",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"11:30:13",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"M+04-27-50",
+				"source":"1"
+			},
+			{
+				"value":"PGC 35452",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"6998",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"100",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"16.4",
+		"maxday":"28",
+		"maxmonth":"3",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.023",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+24:10:06.4",
+				"source":"1"
+			},
+			{
+				"value":"+24:10:07.2",
+				"source":"2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:30:13.30",
+				"source":"1"
+			},
+			{
+				"value":"11:30:13.37",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56738.24",
+				"band":"C",
+				"abmag":"16.5",
+				"source":"4,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56744.5",
+				"band":"",
+				"abmag":"16.4",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56744.9",
+				"band":"V",
+				"abmag":"17.0",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56745.146",
+				"band":"U",
+				"abmag":"16.4",
+				"source":"6,3"
+			}
+		]
+	}
 }

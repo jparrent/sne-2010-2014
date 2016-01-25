@@ -1,60 +1,92 @@
 {
-    "ASASSN-13ch": {
-        "name": "ASASSN-13ch",
-        "aliases": [
-            "ASASSN-13ch"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5333'>ATEL 5333</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Stan Howerton",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "31",
-        "discoverer": "All Sky Automated Survey for SuperNovae (ASAS-SN)",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "host": "CGCG 23-30",
-        "hvel": "4894",
-        "lumdist": "73.762",
-        "maxabsmag": "-18.839",
-        "maxappmag": "15.5",
-        "maxday": "31",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "redshift": "0.01646",
-        "sndec": "-00:35:27.4",
-        "snra": "16:16:34.06",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56535.5",
-                "band": "",
-                "abmag": "15.5",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56536.146",
-                "band": "U",
-                "abmag": "15.5",
-                "source": "3,1"
-            }
-        ]
-    }
+	"ASASSN-13ch":{
+		"name":"ASASSN-13ch",
+		"aliases":[
+			"ASASSN-13ch"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5333",
+				"url":"http://www.astronomerstelegram.org/?read=5333",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Stan Howerton",
+				"alias":"3"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"31",
+		"discoverer":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"host":[
+			{
+				"value":"CGCG 23-30",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"4894",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"73.76",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.84",
+		"maxappmag":"15.5",
+		"maxday":"31",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.01646",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-00:35:27.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"16:16:34.06",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56535.5",
+				"band":"",
+				"abmag":"15.5",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56536.146",
+				"band":"U",
+				"abmag":"15.5",
+				"source":"3,2"
+			}
+		]
+	}
 }

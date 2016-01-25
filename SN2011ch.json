@@ -1,53 +1,81 @@
 {
-    "SN2011ch": {
-        "name": "SN2011ch",
-        "aliases": [
-            "SN2011ch",
-            "CSS110427:130254+495229"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002718.txt'>CBET 2718</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "26",
-        "discoverer": "CRTS",
-        "discovermonth": "4",
-        "discoveryear": "2011",
-        "galdec": "+495229",
-        "galra": "130254",
-        "host": "A130254+4952",
-        "maxappmag": "16.2",
-        "maxday": "26",
-        "maxmonth": "4",
-        "maxyear": "2011",
-        "sndec": "+49:52:29.1",
-        "snra": "13:02:54.31",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55677.5",
-                "band": "",
-                "abmag": "16.2",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011ch":{
+		"name":"SN2011ch",
+		"aliases":[
+			"SN2011ch",
+			"CSS110427:130254+495229"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2718",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002700/CBET002718.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"26",
+		"discoverer":"CRTS",
+		"discovermonth":"4",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+49:52:29",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"13:02:54",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A130254+4952",
+				"source":"1"
+			}
+		],
+		"maxappmag":"16.2",
+		"maxday":"26",
+		"maxmonth":"4",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+49:52:29.1",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"13:02:54.31",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55677.5",
+				"band":"",
+				"abmag":"16.2",
+				"source":"2,3"
+			}
+		]
+	}
 }

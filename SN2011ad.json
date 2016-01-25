@@ -1,56 +1,99 @@
 {
-    "SN2011ad": {
-        "name": "SN2011ad",
-        "aliases": [
-            "SN2011ad"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002657.txt'>CBET 2657</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "10",
-        "discoverer": "ROTSE",
-        "discovermonth": "2",
-        "discoveryear": "2011",
-        "galdec": "+464651",
-        "galra": "114600",
-        "host": "A114600+4646",
-        "hvel": "27600",
-        "lumdist": "458.6",
-        "maxabsmag": "-19.71",
-        "maxappmag": "18.6",
-        "maxday": "10",
-        "maxmonth": "2",
-        "maxyear": "2011",
-        "redshift": "0.0967",
-        "sndec": "+46:46:50.5",
-        "snra": "11:45:59.58",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55602.5",
-                "band": "",
-                "abmag": "18.6",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011ad":{
+		"name":"SN2011ad",
+		"aliases":[
+			"SN2011ad"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2657",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002657.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"10",
+		"discoverer":"ROTSE",
+		"discovermonth":"2",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+46:46:51",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"11:46:00",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A114600+4646",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"27600",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"430",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"18.6",
+		"maxday":"10",
+		"maxmonth":"2",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.092",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+46:46:50.5",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:45:59.58",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55602.5",
+				"band":"",
+				"abmag":"18.6",
+				"source":"2,3"
+			}
+		]
+	}
 }

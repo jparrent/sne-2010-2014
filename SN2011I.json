@@ -1,53 +1,85 @@
 {
-    "SN2011I": {
-        "name": "SN2011I",
-        "aliases": [
-            "SN2011I",
-            "PSN J09502499-2151451"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002635.txt'>CBET 2635</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "5",
-        "discoverer": "Berto Monard",
-        "discovermonth": "1",
-        "discoveryear": "2011",
-        "galdec": "-215145",
-        "galra": "095024",
-        "host": "LEDA 3081659",
-        "maxappmag": "15.8",
-        "maxday": "5",
-        "maxmonth": "1",
-        "maxyear": "2011",
-        "sndec": "-21:51:45.1",
-        "snra": "09:50:24.99",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55566.5",
-                "band": "",
-                "abmag": "15.8",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011I":{
+		"name":"SN2011I",
+		"aliases":[
+			"SN2011I",
+			"PSN J09502499-2151451"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2635",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002635.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"5",
+		"discoverer":"Berto Monard",
+		"discovermonth":"1",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"-21:51:45",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"09:50:24",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A095024-2151",
+				"source":"1"
+			},
+			{
+				"value":"LEDA 3081659",
+				"source":"2,3"
+			}
+		],
+		"maxappmag":"15.8",
+		"maxday":"5",
+		"maxmonth":"1",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"-21:51:45.1",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:50:24.99",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55566.5",
+				"band":"",
+				"abmag":"15.8",
+				"source":"2,3"
+			}
+		]
+	}
 }

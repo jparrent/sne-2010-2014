@@ -1,57 +1,104 @@
 {
-    "SN2014di": {
-        "name": "SN2014di",
-        "aliases": [
-            "SN2014di",
-            "PSN J01300340-4241487"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003992.txt'>CBET 3992</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "20",
-        "discoverer": "Berto Monard",
-        "discovermonth": "9",
-        "discoveryear": "2014",
-        "galdec": "-424111",
-        "galra": "013005",
-        "host": "ESO 244-G31",
-        "hvel": "6768",
-        "lumdist": "102.84",
-        "maxabsmag": "-16.961",
-        "maxappmag": "18.1",
-        "maxday": "20",
-        "maxmonth": "9",
-        "maxyear": "2014",
-        "redshift": "0.02284",
-        "sndec": "-42:41:48.7",
-        "snra": "01:30:03.40",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56920.5",
-                "band": "",
-                "abmag": "18.1",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2014di":{
+		"name":"SN2014di",
+		"aliases":[
+			"SN2014di",
+			"PSN J01300340-4241487"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3992",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003992.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"20",
+		"discoverer":"Berto Monard",
+		"discovermonth":"9",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"-42:41:11",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"01:30:05",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"E244-G31",
+				"source":"1"
+			},
+			{
+				"value":"ESO 244-G31",
+				"source":"2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"6768",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"99",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-17",
+		"maxappmag":"18.1",
+		"maxday":"20",
+		"maxmonth":"9",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.022",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-42:41:48.7",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"01:30:03.40",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56920.5",
+				"band":"",
+				"abmag":"18.1",
+				"source":"2,3"
+			}
+		]
+	}
 }

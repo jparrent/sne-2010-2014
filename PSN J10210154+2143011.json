@@ -1,39 +1,56 @@
 {
-    "PSN J10210154+2143011": {
-        "name": "PSN J10210154+2143011",
-        "aliases": [
-            "PSN J10210154+2143011"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/unconf/followups/J10210154+2143011.html'>CBAT TOCP</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "LSSSS",
-        "discovermonth": "2",
-        "discoveryear": "2011",
-        "host": "MCG +4-25-5",
-        "maxappmag": "17.4",
-        "maxday": "24",
-        "maxmonth": "2",
-        "maxyear": "2011",
-        "sndec": "+21:43:01.1",
-        "snra": "10:21:01.53",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55616.5",
-                "band": "",
-                "abmag": "17.4",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN J10210154+2143011":{
+		"name":"PSN J10210154+2143011",
+		"aliases":[
+			"PSN J10210154+2143011"
+		],
+		"sources":[
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J10210154+2143011.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"LSSSS",
+		"discovermonth":"2",
+		"discoveryear":"2011",
+		"host":[
+			{
+				"value":"MCG +4-25-5",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":"17.4",
+		"maxday":"24",
+		"maxmonth":"2",
+		"maxyear":"2011",
+		"sndec":[
+			{
+				"value":"+21:43:01.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:21:01.53",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55616.5",
+				"band":"",
+				"abmag":"17.4",
+				"source":"1,2"
+			}
+		]
+	}
 }

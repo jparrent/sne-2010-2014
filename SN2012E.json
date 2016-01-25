@@ -1,57 +1,100 @@
 {
-    "SN2012E": {
-        "name": "SN2012E",
-        "aliases": [
-            "SN2012E",
-            "PSN J02332279+0935056"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002981.txt'>CBET 2981</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "19",
-        "discoverer": "Tim Puckett et al.",
-        "discovermonth": "1",
-        "discoveryear": "2012",
-        "galdec": "+093606",
-        "galra": "023323",
-        "host": "NGC 975",
-        "hvel": "6111",
-        "lumdist": "92.6",
-        "maxabsmag": "-19.03",
-        "maxappmag": "15.8",
-        "maxday": "19",
-        "maxmonth": "1",
-        "maxyear": "2012",
-        "redshift": "0.0206",
-        "sndec": "+09:35:05.6",
-        "snra": "02:33:22.79",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55945.5",
-                "band": "",
-                "abmag": "15.8",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2012E":{
+		"name":"SN2012E",
+		"aliases":[
+			"SN2012E",
+			"PSN J02332279+0935056"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2981",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002981.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"19",
+		"discoverer":"Tim Puckett et al.",
+		"discovermonth":"1",
+		"discoveryear":"2012",
+		"galdec":[
+			{
+				"value":"+09:36:06",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"02:33:23",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"NGC 975",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"6111",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"100",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"15.8",
+		"maxday":"19",
+		"maxmonth":"1",
+		"maxyear":"2012",
+		"redshift":[
+			{
+				"value":"0.03",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+09:35:05.6",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"02:33:22.79",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55945.5",
+				"band":"",
+				"abmag":"15.8",
+				"source":"2,3"
+			}
+		]
+	}
 }

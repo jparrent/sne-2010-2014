@@ -1,38 +1,50 @@
 {
-    "PS1-13eow": {
-        "name": "PS1-13eow",
-        "aliases": [
-            "PS1-13eow"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://star.pst.qub.ac.uk/ps1threepi/psdb/public/?page=3'>PS1 SN page</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "PS1",
-        "discovermonth": "12",
-        "discoveryear": "2013",
-        "maxappmag": "19",
-        "maxday": "24",
-        "maxmonth": "12",
-        "maxyear": "2013",
-        "sndec": "+31:18:31.0",
-        "snra": "01:29:44.16",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56650.5",
-                "band": "",
-                "abmag": "19.0",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PS1-13eow":{
+		"name":"PS1-13eow",
+		"aliases":[
+			"PS1-13eow"
+		],
+		"sources":[
+			{
+				"name":"PS1 SN page",
+				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/?page=3",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"PS1",
+		"discovermonth":"12",
+		"discoveryear":"2013",
+		"maxappmag":"19",
+		"maxday":"24",
+		"maxmonth":"12",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+31:18:31.0",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"01:29:44.16",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56650.5",
+				"band":"",
+				"abmag":"19.0",
+				"source":"1,2"
+			}
+		]
+	}
 }

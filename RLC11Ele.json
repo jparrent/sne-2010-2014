@@ -1,30 +1,62 @@
 {
-    "RLC11Ele": {
-        "name": "RLC11Ele",
-        "aliases": [
-            "RLC11Ele",
-            "SN Eleanor"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=8170'>ATEL 8170</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "23",
-        "discoverer": "HST",
-        "discovermonth": "4",
-        "discoveryear": "2011",
-        "host": "MACSJ0949.8+1708",
-        "hvel": "93900",
-        "lumdist": "2130",
-        "redshift": "0.383",
-        "sndec": "+17:07:24.9",
-        "snra": "09:49:47.97"
-    }
+	"RLC11Ele":{
+		"name":"RLC11Ele",
+		"aliases":[
+			"RLC11Ele",
+			"SN Eleanor"
+		],
+		"sources":[
+			{
+				"name":"ATEL 8170",
+				"url":"http://www.astronomerstelegram.org/?read=8170",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"23",
+		"discoverer":"HST",
+		"discovermonth":"4",
+		"discoveryear":"2011",
+		"host":[
+			{
+				"value":"MACSJ0949.8+1708",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"93900",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"2130",
+				"source":"D"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.383",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+17:07:24.9",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:49:47.97",
+				"source":"1,2"
+			}
+		]
+	}
 }

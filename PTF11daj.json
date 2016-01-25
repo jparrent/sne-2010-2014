@@ -1,48 +1,75 @@
 {
-    "PTF11daj": {
-        "name": "PTF11daj",
-        "aliases": [
-            "PTF11daj"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=3392'>ATEL 3392</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "3",
-        "discoverer": "PTF",
-        "discovermonth": "5",
-        "discoveryear": "2011",
-        "hvel": "30100",
-        "lumdist": "506",
-        "maxabsmag": "-17.1",
-        "maxappmag": "21.4",
-        "maxday": "3",
-        "maxmonth": "5",
-        "maxyear": "2011",
-        "redshift": "0.106",
-        "sndec": "+02:09:18.1",
-        "snra": "10:00:40.05",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55684.5",
-                "band": "",
-                "abmag": "21.4",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PTF11daj":{
+		"name":"PTF11daj",
+		"aliases":[
+			"PTF11daj"
+		],
+		"sources":[
+			{
+				"name":"ATEL 3392",
+				"url":"http://www.astronomerstelegram.org/?read=3392",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"3",
+		"discoverer":"PTF",
+		"discovermonth":"5",
+		"discoveryear":"2011",
+		"hvel":[
+			{
+				"value":"30100",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"506",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-17.1",
+		"maxappmag":"21.4",
+		"maxday":"3",
+		"maxmonth":"5",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.106",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+02:09:18.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:00:40.05",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55684.5",
+				"band":"",
+				"abmag":"21.4",
+				"source":"1,2"
+			}
+		]
+	}
 }

@@ -1,49 +1,61 @@
 {
-    "MLS131108:031009+230828": {
-        "name": "MLS131108:031009+230828",
-        "aliases": [
-            "MLS131108:031009+230828"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5659'>ATEL 5659</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            }
-        ],
-        "discoverday": "7",
-        "discoverer": "CRTS",
-        "discovermonth": "11",
-        "discoveryear": "2013",
-        "maxappmag": "20.8",
-        "maxday": "7",
-        "maxmonth": "11",
-        "maxyear": "2013",
-        "sndec": "+23:08:28.4",
-        "snra": "03:10:08.74",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56603.5",
-                "band": "",
-                "abmag": "20.8",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56606.424",
-                "band": "C",
-                "abmag": "22.4",
-                "source": "3,1"
-            }
-        ]
-    }
+	"MLS131108:031009+230828":{
+		"name":"MLS131108:031009+230828",
+		"aliases":[
+			"MLS131108:031009+230828"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5659",
+				"url":"http://www.astronomerstelegram.org/?read=5659",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			}
+		],
+		"discoverday":"7",
+		"discoverer":"CRTS",
+		"discovermonth":"11",
+		"discoveryear":"2013",
+		"maxappmag":"20.8",
+		"maxday":"7",
+		"maxmonth":"11",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+23:08:28.4",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"03:10:08.74",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56603.5",
+				"band":"",
+				"abmag":"20.8",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56606.424",
+				"band":"C",
+				"abmag":"22.4",
+				"source":"3,2"
+			}
+		]
+	}
 }

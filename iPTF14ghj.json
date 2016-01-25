@@ -1,48 +1,75 @@
 {
-    "iPTF14ghj": {
-        "name": "iPTF14ghj",
-        "aliases": [
-            "iPTF14ghj"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6598'>ATEL 6598</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "1",
-        "discoverer": "PTF",
-        "discovermonth": "10",
-        "discoveryear": "2014",
-        "hvel": "30000",
-        "lumdist": "500",
-        "maxabsmag": "-20",
-        "maxappmag": "20.9",
-        "maxday": "1",
-        "maxmonth": "10",
-        "maxyear": "2014",
-        "redshift": "0.1",
-        "sndec": "+24:58:44.3",
-        "snra": "23:07:31.64",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56931.5",
-                "band": "",
-                "abmag": "20.9",
-                "source": "2,1"
-            }
-        ]
-    }
+	"iPTF14ghj":{
+		"name":"iPTF14ghj",
+		"aliases":[
+			"iPTF14ghj"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6598",
+				"url":"http://www.astronomerstelegram.org/?read=6598",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"1",
+		"discoverer":"PTF",
+		"discovermonth":"10",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"30000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"500",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"20.9",
+		"maxday":"1",
+		"maxmonth":"10",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.1",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+24:58:44.3",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"23:07:31.64",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56931.5",
+				"band":"",
+				"abmag":"20.9",
+				"source":"1,2"
+			}
+		]
+	}
 }

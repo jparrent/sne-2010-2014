@@ -1,90 +1,133 @@
 {
-    "SN2013fn": {
-        "name": "SN2013fn",
-        "aliases": [
-            "SN2013fn",
-            "PSN J21002376-1429522"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003662.txt'>CBET 3662</a>",
-                "alias": "3"
-            },
-            {
-                "name": "L. Elenin and I. Molotov",
-                "alias": "4"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "5"
-            },
-            {
-                "name": "Stan Howerton",
-                "alias": "6"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "CRTS",
-        "discovermonth": "9",
-        "discoveryear": "2013",
-        "galdec": "-142945",
-        "galra": "210026",
-        "host": "IC 1342",
-        "hvel": "8134",
-        "lumdist": "124.3",
-        "maxabsmag": "-18.672",
-        "maxappmag": "16.8",
-        "maxday": "24",
-        "maxmonth": "9",
-        "maxyear": "2013",
-        "redshift": "0.02751",
-        "sndec": "-14:29:52.2",
-        "snra": "21:00:23.76",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56559.5",
-                "band": "",
-                "abmag": "16.8",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56561.2172",
-                "band": "U",
-                "abmag": "17.3",
-                "source": "4,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56561.507",
-                "band": "IR",
-                "abmag": "17.9",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56561.52",
-                "band": "CV",
-                "abmag": "17.1",
-                "source": "6,2"
-            }
-        ]
-    }
+	"SN2013fn":{
+		"name":"SN2013fn",
+		"aliases":[
+			"SN2013fn",
+			"PSN J21002376-1429522"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3662",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003662.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"L. Elenin and I. Molotov",
+				"alias":"4"
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"5"
+			},
+			{
+				"name":"Stan Howerton",
+				"alias":"6"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"CRTS",
+		"discovermonth":"9",
+		"discoveryear":"2013",
+		"galdec":[
+			{
+				"value":"-14:29:45",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"21:00:26",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"IC 1342",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"8134",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"121.83",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-18.629",
+		"maxappmag":"16.8",
+		"maxday":"24",
+		"maxmonth":"9",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.026975",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-14:29:52.2",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"21:00:23.76",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56559.5",
+				"band":"",
+				"abmag":"16.8",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56561.2172",
+				"band":"U",
+				"abmag":"17.3",
+				"source":"4,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56561.507",
+				"band":"IR",
+				"abmag":"17.9",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56561.52",
+				"band":"CV",
+				"abmag":"17.1",
+				"source":"6,3"
+			}
+		]
+	}
 }

@@ -1,38 +1,50 @@
 {
-    "LSQ14azl": {
-        "name": "LSQ14azl",
-        "aliases": [
-            "LSQ14azl"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6091'>ATEL 6091</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "12",
-        "discoverer": "La Silla-QUEST",
-        "discovermonth": "4",
-        "discoveryear": "2014",
-        "maxappmag": "17.9",
-        "maxday": "12",
-        "maxmonth": "4",
-        "maxyear": "2014",
-        "sndec": "-30:10:20.7",
-        "snra": "14:17:33.44",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56759.5",
-                "band": "",
-                "abmag": "17.9",
-                "source": "2,1"
-            }
-        ]
-    }
+	"LSQ14azl":{
+		"name":"LSQ14azl",
+		"aliases":[
+			"LSQ14azl"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6091",
+				"url":"http://www.astronomerstelegram.org/?read=6091",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"12",
+		"discoverer":"La Silla-QUEST",
+		"discovermonth":"4",
+		"discoveryear":"2014",
+		"maxappmag":"17.9",
+		"maxday":"12",
+		"maxmonth":"4",
+		"maxyear":"2014",
+		"sndec":[
+			{
+				"value":"-30:10:20.7",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"14:17:33.44",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56759.5",
+				"band":"",
+				"abmag":"17.9",
+				"source":"1,2"
+			}
+		]
+	}
 }

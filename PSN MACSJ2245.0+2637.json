@@ -1,38 +1,50 @@
 {
-    "PSN MACSJ2245.0+2637": {
-        "name": "PSN MACSJ2245.0+2637",
-        "aliases": [
-            "PSN MACSJ2245.0+2637"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5390'>ATEL 5390</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "30",
-        "discoverer": "Survey at Intermediate Redshift for Cluster and Lensed Supernovae (SIRCLS)",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "maxappmag": "23.1",
-        "maxday": "30",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "sndec": "+26:39:31.1",
-        "snra": "22:44:57.71",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56534.5",
-                "band": "",
-                "abmag": "23.1",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN MACSJ2245.0+2637":{
+		"name":"PSN MACSJ2245.0+2637",
+		"aliases":[
+			"PSN MACSJ2245.0+2637"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5390",
+				"url":"http://www.astronomerstelegram.org/?read=5390",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"30",
+		"discoverer":"Survey at Intermediate Redshift for Cluster and Lensed Supernovae (SIRCLS)",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"maxappmag":"23.1",
+		"maxday":"30",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+26:39:31.1",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"22:44:57.71",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56534.5",
+				"band":"",
+				"abmag":"23.1",
+				"source":"1,2"
+			}
+		]
+	}
 }

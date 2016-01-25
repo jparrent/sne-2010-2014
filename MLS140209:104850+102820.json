@@ -1,59 +1,86 @@
 {
-    "MLS140209:104850+102820": {
-        "name": "MLS140209:104850+102820",
-        "aliases": [
-            "MLS140209:104850+102820"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://nesssi.cacr.caltech.edu/catalina/AllSN.html'>CRTS SN page</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "8",
-        "discoverer": "CRTS",
-        "discovermonth": "2",
-        "discoveryear": "2014",
-        "hvel": "36000",
-        "lumdist": "630",
-        "maxabsmag": "-20",
-        "maxappmag": "19.3",
-        "maxday": "12",
-        "maxmonth": "2",
-        "maxyear": "2014",
-        "redshift": "0.13",
-        "sndec": "+10:28:19.5",
-        "snra": "10:48:50.01",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56696.5",
-                "band": "",
-                "abmag": "19.4",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56700.463",
-                "band": "C",
-                "abmag": "19.3",
-                "source": "3,1"
-            }
-        ]
-    }
+	"MLS140209:104850+102820":{
+		"name":"MLS140209:104850+102820",
+		"aliases":[
+			"MLS140209:104850+102820"
+		],
+		"sources":[
+			{
+				"name":"CRTS SN page",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"8",
+		"discoverer":"CRTS",
+		"discovermonth":"2",
+		"discoveryear":"2014",
+		"hvel":[
+			{
+				"value":"36000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"630",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-20",
+		"maxappmag":"19.3",
+		"maxday":"12",
+		"maxmonth":"2",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.13",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+10:28:19.5",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:48:50.01",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56696.5",
+				"band":"",
+				"abmag":"19.4",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56700.463",
+				"band":"C",
+				"abmag":"19.3",
+				"source":"3,2"
+			}
+		]
+	}
 }

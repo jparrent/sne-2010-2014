@@ -1,38 +1,50 @@
 {
-    "MASTER OT J001502.14+413235.2": {
-        "name": "MASTER OT J001502.14+413235.2",
-        "aliases": [
-            "MASTER OT J001502.14+413235.2"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5371'>ATEL 5371</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "29",
-        "discoverer": "MASTER",
-        "discovermonth": "8",
-        "discoveryear": "2013",
-        "maxappmag": "17.1",
-        "maxday": "29",
-        "maxmonth": "8",
-        "maxyear": "2013",
-        "sndec": "+41:32:35.2",
-        "snra": "00:15:02.14",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56533.5",
-                "band": "",
-                "abmag": "17.1",
-                "source": "2,1"
-            }
-        ]
-    }
+	"MASTER OT J001502.14+413235.2":{
+		"name":"MASTER OT J001502.14+413235.2",
+		"aliases":[
+			"MASTER OT J001502.14+413235.2"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5371",
+				"url":"http://www.astronomerstelegram.org/?read=5371",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"29",
+		"discoverer":"MASTER",
+		"discovermonth":"8",
+		"discoveryear":"2013",
+		"maxappmag":"17.1",
+		"maxday":"29",
+		"maxmonth":"8",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+41:32:35.2",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"00:15:02.14",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56533.5",
+				"band":"",
+				"abmag":"17.1",
+				"source":"1,2"
+			}
+		]
+	}
 }

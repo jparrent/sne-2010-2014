@@ -1,38 +1,50 @@
 {
-    "MLS120608:103106+100018": {
-        "name": "MLS120608:103106+100018",
-        "aliases": [
-            "MLS120608:103106+100018"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://skyalert.org/'>SkyAlert</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "7",
-        "discoverer": "CRTS",
-        "discovermonth": "6",
-        "discoveryear": "2012",
-        "maxappmag": "20.7",
-        "maxday": "7",
-        "maxmonth": "6",
-        "maxyear": "2012",
-        "sndec": "+10:00:17.57",
-        "snra": "10:31:06.18",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56085.5",
-                "band": "",
-                "abmag": "20.7",
-                "source": "2,1"
-            }
-        ]
-    }
+	"MLS120608:103106+100018":{
+		"name":"MLS120608:103106+100018",
+		"aliases":[
+			"MLS120608:103106+100018"
+		],
+		"sources":[
+			{
+				"name":"SkyAlert",
+				"url":"http://skyalert.org/",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"7",
+		"discoverer":"CRTS",
+		"discovermonth":"6",
+		"discoveryear":"2012",
+		"maxappmag":"20.7",
+		"maxday":"7",
+		"maxmonth":"6",
+		"maxyear":"2012",
+		"sndec":[
+			{
+				"value":"+10:00:17.57",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"10:31:06.18",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56085.5",
+				"band":"",
+				"abmag":"20.7",
+				"source":"1,2"
+			}
+		]
+	}
 }

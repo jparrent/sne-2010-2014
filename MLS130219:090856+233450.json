@@ -1,38 +1,50 @@
 {
-    "MLS130219:090856+233450": {
-        "name": "MLS130219:090856+233450",
-        "aliases": [
-            "MLS130219:090856+233450"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=4872'>ATEL 4872</a>",
-                "alias": "2"
-            }
-        ],
-        "discoverday": "18",
-        "discoverer": "CRTS",
-        "discovermonth": "2",
-        "discoveryear": "2013",
-        "maxappmag": "19.9",
-        "maxday": "18",
-        "maxmonth": "2",
-        "maxyear": "2013",
-        "sndec": "+23:34:50.3",
-        "snra": "09:08:55.76",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56341.5",
-                "band": "",
-                "abmag": "19.9",
-                "source": "2,1"
-            }
-        ]
-    }
+	"MLS130219:090856+233450":{
+		"name":"MLS130219:090856+233450",
+		"aliases":[
+			"MLS130219:090856+233450"
+		],
+		"sources":[
+			{
+				"name":"ATEL 4872",
+				"url":"http://www.astronomerstelegram.org/?read=4872",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"discoverday":"18",
+		"discoverer":"CRTS",
+		"discovermonth":"2",
+		"discoveryear":"2013",
+		"maxappmag":"19.9",
+		"maxday":"18",
+		"maxmonth":"2",
+		"maxyear":"2013",
+		"sndec":[
+			{
+				"value":"+23:34:50.3",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"09:08:55.76",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56341.5",
+				"band":"",
+				"abmag":"19.9",
+				"source":"1,2"
+			}
+		]
+	}
 }

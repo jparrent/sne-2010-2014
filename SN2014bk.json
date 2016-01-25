@@ -1,60 +1,103 @@
 {
-    "SN2014bk": {
-        "name": "SN2014bk",
-        "aliases": [
-            "SN2014bk"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003894.txt'>CBET 3894</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ib pec",
-                "source": "1"
-            },
-            {
-                "type": "Ibn",
-                "source": "2"
-            }
-        ],
-        "discoverday": "24",
-        "discoverer": "Kiso Supernova Survey (KISS) collaboration",
-        "discovermonth": "5",
-        "discoveryear": "2014",
-        "galdec": "+200024",
-        "galra": "135402",
-        "host": "A135402+2000",
-        "hvel": "20910",
-        "lumdist": "337.58",
-        "maxabsmag": "-19.742",
-        "maxappmag": "17.9",
-        "maxday": "24",
-        "maxmonth": "5",
-        "maxyear": "2014",
-        "redshift": "0.07236",
-        "sndec": "+20:00:24.3",
-        "snra": "13:54:02.42",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56801.5",
-                "band": "",
-                "abmag": "17.9",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2014bk":{
+		"name":"SN2014bk",
+		"aliases":[
+			"SN2014bk"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3894",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003800/CBET003894.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ib P",
+				"source":"1"
+			},
+			{
+				"value":"Ibn",
+				"source":"2,3"
+			}
+		],
+		"discoverday":"24",
+		"discoverer":"Kiso Supernova Survey (KISS) collaboration",
+		"discovermonth":"5",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+20:00:24",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"13:54:02",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"A135402+2000",
+				"source":"1"
+			}
+		],
+		"hvel":[
+			{
+				"value":"20910",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"325",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.7",
+		"maxappmag":"17.9",
+		"maxday":"24",
+		"maxmonth":"5",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.0697",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+20:00:24.3",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"13:54:02.42",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56801.5",
+				"band":"",
+				"abmag":"17.9",
+				"source":"2,3"
+			}
+		]
+	}
 }

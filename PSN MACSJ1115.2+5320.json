@@ -1,48 +1,75 @@
 {
-    "PSN MACSJ1115.2+5320": {
-        "name": "PSN MACSJ1115.2+5320",
-        "aliases": [
-            "PSN MACSJ1115.2+5320"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=5017'>ATEL 5017</a>",
-                "alias": "2"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1"
-            }
-        ],
-        "discoverday": "6",
-        "discoverer": "Survey at Intermediate Redshift for Cluster and Lensed Supernovae (SIRCLS)",
-        "discovermonth": "4",
-        "discoveryear": "2013",
-        "hvel": "109000",
-        "lumdist": "2680",
-        "maxabsmag": "-19.5",
-        "maxappmag": "22.6",
-        "maxday": "6",
-        "maxmonth": "4",
-        "maxyear": "2013",
-        "redshift": "0.466",
-        "sndec": "+53:19:54.3",
-        "snra": "11:15:14.86",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56388.5",
-                "band": "",
-                "abmag": "22.6",
-                "source": "2,1"
-            }
-        ]
-    }
+	"PSN MACSJ1115.2+5320":{
+		"name":"PSN MACSJ1115.2+5320",
+		"aliases":[
+			"PSN MACSJ1115.2+5320"
+		],
+		"sources":[
+			{
+				"name":"ATEL 5017",
+				"url":"http://www.astronomerstelegram.org/?read=5017",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"6",
+		"discoverer":"Survey at Intermediate Redshift for Cluster and Lensed Supernovae (SIRCLS)",
+		"discovermonth":"4",
+		"discoveryear":"2013",
+		"hvel":[
+			{
+				"value":"109000",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"2680",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19.5",
+		"maxappmag":"22.6",
+		"maxday":"6",
+		"maxmonth":"4",
+		"maxyear":"2013",
+		"redshift":[
+			{
+				"value":"0.466",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+53:19:54.3",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:15:14.86",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56388.5",
+				"band":"",
+				"abmag":"22.6",
+				"source":"1,2"
+			}
+		]
+	}
 }

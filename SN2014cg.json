@@ -1,79 +1,122 @@
 {
-    "SN2014cg": {
-        "name": "SN2014cg",
-        "aliases": [
-            "SN2014cg",
-            "PSN J20043485+1244168"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003945.txt'>CBET 3945</a>",
-                "alias": "3"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "4"
-            },
-            {
-                "name": "Paolo Campaner",
-                "alias": "5"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "Ia",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "17",
-        "discoverer": "Italian Supernovae Search Project",
-        "discovermonth": "7",
-        "discoveryear": "2014",
-        "galdec": "+124424",
-        "galra": "200434",
-        "host": "UGC 11512",
-        "hvel": "4417",
-        "lumdist": "66.421",
-        "maxabsmag": "-16.512",
-        "maxappmag": "17.6",
-        "maxday": "21",
-        "maxmonth": "7",
-        "maxyear": "2014",
-        "redshift": "0.01484",
-        "sndec": "+12:44:16.8",
-        "snra": "20:04:34.85",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56855.5",
-                "band": "",
-                "abmag": "17.8",
-                "source": "3,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56859.957",
-                "band": "U",
-                "abmag": "17.6",
-                "source": "5,2"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56860.344",
-                "band": "C",
-                "abmag": "18.3",
-                "source": "4,2"
-            }
-        ]
-    }
+	"SN2014cg":{
+		"name":"SN2014cg",
+		"aliases":[
+			"SN2014cg",
+			"PSN J20043485+1244168"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 3945",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003900/CBET003945.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"4"
+			},
+			{
+				"name":"Paolo Campaner",
+				"alias":"5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"17",
+		"discoverer":"Italian Supernovae Search Project",
+		"discovermonth":"7",
+		"discoveryear":"2014",
+		"galdec":[
+			{
+				"value":"+12:44:24",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"20:04:34",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 11512",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"4417",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"65.8",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-16.5",
+		"maxappmag":"17.6",
+		"maxday":"21",
+		"maxmonth":"7",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.0147",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+12:44:16.8",
+				"source":"1,2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"20:04:34.85",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56855.5",
+				"band":"",
+				"abmag":"17.8",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56859.957",
+				"band":"U",
+				"abmag":"17.6",
+				"source":"5,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56860.344",
+				"band":"C",
+				"abmag":"18.3",
+				"source":"4,3"
+			}
+		]
+	}
 }

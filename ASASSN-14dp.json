@@ -1,60 +1,92 @@
 {
-    "ASASSN-14dp": {
-        "name": "ASASSN-14dp",
-        "aliases": [
-            "ASASSN-14dp"
-        ],
-        "sources": [
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.astronomerstelegram.org/?read=6297'>ATEL 6297</a>",
-                "alias": "2"
-            },
-            {
-                "name": "Joseph Brimacombe",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1"
-            }
-        ],
-        "discoverday": "6",
-        "discoverer": "All Sky Automated Survey for SuperNovae (ASAS-SN)",
-        "discovermonth": "7",
-        "discoveryear": "2014",
-        "host": "ESO 319-G15",
-        "hvel": "599",
-        "lumdist": "8.86",
-        "maxabsmag": "-13.9",
-        "maxappmag": "15.8",
-        "maxday": "8",
-        "maxmonth": "7",
-        "maxyear": "2014",
-        "redshift": "0.002",
-        "sndec": "-37:54:24.5",
-        "snra": "11:21:58.45",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "56844.5",
-                "band": "",
-                "abmag": "16.2",
-                "source": "2,1"
-            },
-            {
-                "timeunit": "MJD",
-                "time": "56846.382",
-                "band": "L",
-                "abmag": "15.8",
-                "source": "3,1"
-            }
-        ]
-    }
+	"ASASSN-14dp":{
+		"name":"ASASSN-14dp",
+		"aliases":[
+			"ASASSN-14dp"
+		],
+		"sources":[
+			{
+				"name":"ATEL 6297",
+				"url":"http://www.astronomerstelegram.org/?read=6297",
+				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"Joseph Brimacombe",
+				"alias":"3"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2"
+			}
+		],
+		"discoverday":"6",
+		"discoverer":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+		"discovermonth":"7",
+		"discoveryear":"2014",
+		"host":[
+			{
+				"value":"ESO 319-G15",
+				"source":"1,2"
+			}
+		],
+		"hvel":[
+			{
+				"value":"600",
+				"source":"D"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"9",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-10",
+		"maxappmag":"15.8",
+		"maxday":"8",
+		"maxmonth":"7",
+		"maxyear":"2014",
+		"redshift":[
+			{
+				"value":"0.002",
+				"source":"1,2"
+			}
+		],
+		"sndec":[
+			{
+				"value":"-37:54:24.5",
+				"source":"1,2"
+			}
+		],
+		"snra":[
+			{
+				"value":"11:21:58.45",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"56844.5",
+				"band":"",
+				"abmag":"16.2",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56846.382",
+				"band":"L",
+				"abmag":"15.8",
+				"source":"3,2"
+			}
+		]
+	}
 }

@@ -1,57 +1,108 @@
 {
-    "SN2011hy": {
-        "name": "SN2011hy",
-        "aliases": [
-            "SN2011hy",
-            "PSN J04450526+7247026"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002908.txt'>CBET 2908</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "26",
-        "discoverer": "Giancarlo Cortini",
-        "discovermonth": "12",
-        "discoveryear": "2011",
-        "galdec": "+724710",
-        "galra": "044507",
-        "host": "UGC 3131",
-        "hvel": "4754",
-        "lumdist": "71.63",
-        "maxabsmag": "-17.375",
-        "maxappmag": "16.9",
-        "maxday": "26",
-        "maxmonth": "12",
-        "maxyear": "2011",
-        "redshift": "0.01599",
-        "sndec": "+72:47:02.5",
-        "snra": "04:45:05.26",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55921.5",
-                "band": "",
-                "abmag": "16.9",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011hy":{
+		"name":"SN2011hy",
+		"aliases":[
+			"SN2011hy",
+			"PSN J04450526+7247026"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2908",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002908.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"26",
+		"discoverer":"Giancarlo Cortini",
+		"discovermonth":"12",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+72:47:10",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"04:45:07",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 3131",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"4754",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"71.2",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-17.4",
+		"maxappmag":"16.9",
+		"maxday":"26",
+		"maxmonth":"12",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.0159",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+72:47:01.9",
+				"source":"1"
+			},
+			{
+				"value":"+72:47:02.5",
+				"source":"2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"04:45:05.16",
+				"source":"1"
+			},
+			{
+				"value":"04:45:05.26",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55921.5",
+				"band":"",
+				"abmag":"16.9",
+				"source":"2,3"
+			}
+		]
+	}
 }

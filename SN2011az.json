@@ -1,57 +1,108 @@
 {
-    "SN2011az": {
-        "name": "SN2011az",
-        "aliases": [
-            "SN2011az",
-            "PSN J12535343+3605193"
-        ],
-        "sources": [
-            {
-                "name": "http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-                "alias": "1",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.rochesterastronomy.org/snimages/snredshiftall.html'>Latest Supernovae</a>",
-                "alias": "2",
-                "secondary": true
-            },
-            {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002680.txt'>CBET 2680</a>",
-                "alias": "3"
-            }
-        ],
-        "claimedtype": [
-            {
-                "type": "II P",
-                "source": "1,2"
-            }
-        ],
-        "discoverday": "17",
-        "discoverer": "Maurice Gavin",
-        "discovermonth": "3",
-        "discoveryear": "2011",
-        "galdec": "+360513",
-        "galra": "125353",
-        "host": "IC 3862",
-        "hvel": "4384",
-        "lumdist": "65.923",
-        "maxabsmag": "-18.795",
-        "maxappmag": "15.3",
-        "maxday": "17",
-        "maxmonth": "3",
-        "maxyear": "2011",
-        "redshift": "0.01473",
-        "sndec": "+36:05:19.2",
-        "snra": "12:53:53.43",
-        "photometry": [
-            {
-                "timeunit": "MJD",
-                "time": "55637.5",
-                "band": "",
-                "abmag": "15.3",
-                "source": "3,2"
-            }
-        ]
-    }
+	"SN2011az":{
+		"name":"SN2011az",
+		"aliases":[
+			"SN2011az",
+			"PSN J12535343+3605193"
+		],
+		"sources":[
+			{
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"CBET 2680",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002600/CBET002680.txt",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"II P",
+				"source":"1,2,3"
+			}
+		],
+		"discoverday":"17",
+		"discoverer":"Maurice Gavin",
+		"discovermonth":"3",
+		"discoveryear":"2011",
+		"galdec":[
+			{
+				"value":"+36:05:13",
+				"source":"1"
+			}
+		],
+		"galra":[
+			{
+				"value":"12:53:53",
+				"source":"1"
+			}
+		],
+		"host":[
+			{
+				"value":"IC 3862",
+				"source":"1,2,3"
+			}
+		],
+		"hvel":[
+			{
+				"value":"4384",
+				"source":"1"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"63",
+				"source":"D"
+			}
+		],
+		"maxabsmag":"-19",
+		"maxappmag":"15.3",
+		"maxday":"17",
+		"maxmonth":"3",
+		"maxyear":"2011",
+		"redshift":[
+			{
+				"value":"0.014",
+				"source":"2,3"
+			}
+		],
+		"sndec":[
+			{
+				"value":"+36:05:19.6",
+				"source":"1"
+			},
+			{
+				"value":"+36:05:19.2",
+				"source":"2,3"
+			}
+		],
+		"snra":[
+			{
+				"value":"12:53:53.40",
+				"source":"1"
+			},
+			{
+				"value":"12:53:53.43",
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"55637.5",
+				"band":"",
+				"abmag":"15.3",
+				"source":"2,3"
+			}
+		]
+	}
 }
